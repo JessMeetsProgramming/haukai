@@ -123,7 +123,7 @@ a.links {
 	color:rgb(71, 144, 238) !important;
 }
 
-/*TODO make menu responsive - hamburger icon and dropdown for iphones and tablets?*/
+
 /* NAVIGATION rule sets --------------------------------------------*/
 
 /*menu container*/
@@ -207,68 +207,7 @@ li a {
 
 
 
-/*small-medium devices such as portrait tablets 601-768px*/
-@media only screen and (max-width: 768px) {
 
-	
-	html{
-		font-size:17px;
-	}
-
-	/*TODO change to bruger menu
-	figure out where the menu should be positioned and what happens when 
-	scrolling/using diff devices*/
-
-	.nav-menu {
-        position: fixed;
-        left: -100%;
-        top:2em;/*5rem;*/
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-	
-       /* border-radius: 10px;*/
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-		/*spacing between each item*/
-        margin: 2rem 0;
-		float:none;
-    }
-
-	#right-menu {
-		float:none;
-	}
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-		float:right;
-		padding:10px;
-    }
-
-	.hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-	
-}
 
 
 
@@ -338,10 +277,10 @@ p.links {
 /*INDEX page rule sets------------------------------------------------*/
 .mySlides {
 	display:none;
-	width: 80%;
+	/*width: 80%;
 	height: auto;
 	margin-left: 10%;
-	margin-right: 10%;
+	margin-right: 10%;*/
 }
 
 
@@ -373,10 +312,11 @@ p.feature-text {
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
 		serif;
-	font-size:1.5rem; /*rem allows zoom function in browser*/
+	font-size:1.5rem; /*rem allows zoom function in browser whereas vw does not*/
 	text-align: center;
 	margin-left:15%;
 	margin-right:15%;
+	/* TODOadd margin top and bottom 15%?  */
 }
 
 /*ABOUT page rule sets-----------------------------------------------------------*/
@@ -712,8 +652,68 @@ p.drinks {
 
 
 
-/* COPY MOBILE MENU ETC HERE*/
+/*small-medium devices such as portrait tablets 601-768px*/
+@media only screen and (max-width: 768px) {
 
+	
+	html{
+		font-size:17px;
+	}
+
+	/*TODO change to bruger menu
+	figure out where the menu should be positioned and what happens when 
+	scrolling/using diff devices*/
+
+	.nav-menu {
+        position: fixed;
+        left: -100%;
+        top:2em;/*5rem;*/
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+	
+       /* border-radius: 10px;*/
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+		/*spacing between each item*/
+        margin: 2rem 0;
+		float:none;
+    }
+
+	#right-menu {
+		float:none;
+	}
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+		float:right;
+		padding:10px;
+    }
+
+	.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+	
+}
 
 
 
@@ -726,7 +726,7 @@ p.drinks {
 		font-size:20px;
 	}
 		/*get rid of slide container and expand image to take up screen width.*/
-	.mySlides {
+	#slide {
 		width:100%;
 		margin:0;
 	}

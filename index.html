@@ -73,10 +73,31 @@
 
 			<!--Slideshow container -->
 			<div class="slide-container">
-                <img class="mySlides" src="images/restaurant_table_lrg.png" srcset="images/restaurant_table_xs320.jpg 320w, images/restaurant_table_small.jpg 640w, images/restaurant_table_med.png 1280w, images/restaurant_table_lrg.png 1920w" alt="haukai restaurant table setting">
-                <img class="mySlides" src="images/scallops_lrg.png" srcset="images/scallops_xs320.jpg 320w, images/scallops_small.jpg 640w, images/scallops_med.png 1280w, images/scallops_lrg.png 1920w" alt="trio of scallops">
-                <img class="mySlides" src="images/food_design_lrg.png" srcset="images/food_design_xs320.jpg 320w, images/food_design_small.jpg 640w, images/food_design_med.png 1280w, images/food_design_lrg.png 1920w" alt="chef plating artfully">
-              
+               <!-- multiple sets of images for each slide-->
+				<picture class="mySlides">
+					<source id="slide" srcset="images/restaurant_table_xs320.jpg" media="(max-width: 320px)" />
+					<source id="slide" srcset="images/restaurant_table_small.jpg" media="(max-width: 640px)" />
+					<source id="slide" srcset="images/restaurant_table_med.png" media="(max-width: 1280px)" />
+					<source id="slide" srcset="images/restaurant_table_lrg.png" media="(max-width: 1920px)" />
+					<img id="slide" src="images/restaurant_table_xs320.jpg" alt="haukai restaurant table setting" />
+				</picture>
+
+				<picture class="mySlides">
+					<source id="slide" srcset="images/scallops_xs320.jpg" media="(max-width: 320px)" />
+					<source id="slide" srcset="images/scallops_small.jpg" media="(max-width: 640px)" />
+					<source id="slide" srcset="images/scallops_med.png" media="(max-width: 1280px)" />
+					<source id="slide" srcset="images/scallops_lrg.png" media="(max-width: 1920px)" />
+					<img id="slide" src="images/scallops_xs320.jpg" alt="trio of scallops"/>
+				</picture>
+
+				<picture class="mySlides">
+					<source id="slide" srcset="images/food_design_xs320.jpg" media="(max-width: 320px)" />
+					<source id="slide" srcset="images/food_design_small.jpg" media="(max-width: 640px)" />
+					<source id="slide" srcset="images/food_design_med.png" media="(max-width: 1280px)" />
+					<source id="slide" srcset="images/food_design_lrg.png" media="(max-width: 1920px)" />
+					<img id="slide" src="images/food_design_xs320.jpg" alt="chef plating artfully"/>
+				</picture>
+
             </div>
               
 			<!-- Feature text section-->
