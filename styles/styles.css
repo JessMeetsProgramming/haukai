@@ -1,12 +1,12 @@
 /* universal box-sizing */
 * {
 	box-sizing: border-box;
+
 }
 
 
 /*TODO 
 
--footer links and p.links - check font sizing 
 - padding bottom of about-text
 - adjust responsive sizing of header text and logo
 - reservations page responsive image, text blocks, buttons, 
@@ -16,20 +16,18 @@
 */
 
 html {
-	/*standard font size*/
-	font-size:16px;
+	font-size:62.5%;
 } 	
+
 /* BODY rule sets-------------------------------------------------*/
 body {
 	margin: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
 }
 
 /*headings within body*/
 h3.body-heading {
-	/*using absolute sizing as this font does not scale */
-	/*TODO add media query*/
-	font-size:1.5rem;
 	font-weight:bold;
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
@@ -55,18 +53,17 @@ h3.body-heading {
 #haukai {
 	display:block;
 	font-weight: normal;
-	font-size:2.3rem;
 	padding: 15px 20px 0px 20px;
 	margin: 0;
 	line-height:1.2;
+
 }
 
 #restaurant {
 	display:block;
 	font-weight: bold;
-	font-size:1.1rem;
 	margin: 0;
-	
+
 }
 
 /*center text*/
@@ -80,9 +77,11 @@ h3.body-heading {
 
 #logo {
 	opacity: 50%;
-	width: 13vw;
+	width: 13vmax;
 	padding-top:10px;
 	padding-bottom:10px;
+	margin-top:10px;
+	margin-bottom:10px;
 	/*prevent logo being too big or small for header*/
 	max-width:100px;
 	min-width:60px;
@@ -113,6 +112,7 @@ h3.body-heading {
 	right: 10px;
 }
 
+/*footer links*/
 /*remove default hyperlink styling in header and footer*/
 a {
 	text-decoration: none;
@@ -142,7 +142,7 @@ a {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
 	letter-spacing:0.2pt;
-	font-size: 1.2rem;
+	font-size:1.2rem;
 }
 
 li a {
@@ -171,7 +171,6 @@ li a {
 }
 
 .nav-link {
-	/*font-size: 1.2rem;*/
     /*font-weight: 400;*/
     color: black;
 }
@@ -227,7 +226,6 @@ li a {
 	padding-right:20px;
 	width: 100%;
 	letter-spacing: 0.1pt;
-	font-size:0.9em;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	overflow:hidden;
 }
@@ -248,18 +246,19 @@ li a {
 	line-height: 2;
 }
 
-#footer-links {
+/* privacy and staff links*/
+#footer-links  {
 	float: right;
-	line-height: 2;
+    line-height:0.2;
 	letter-spacing: 0.5pt;
-	padding-top:30px;
-	
+	padding-top:25px;
+
 }
 
-p.links {
+.links a {
 	
-	margin-bottom: 0;
-	margin-top:0;
+/*	margin-bottom: 0;
+	margin-top:0;*/
 }
 
 #map {
@@ -298,25 +297,24 @@ p.links {
 	width: 100%;
 }
 
-/*TODO change max-height and add padding? doesn't fill screen for all responsive views*/
+/*TODO change max-height? doesn't fill screen for all responsive views*/
 .text-container {
 	display: inline-block;
 	background-color: whitesmoke;
 	width: 100%;
 	max-height:800px;
-	padding-top:5%;
-	padding-bottom:5%;
+	padding: 10% 15%;
 }
 
 p.feature-text {
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
 		serif;
-	font-size:1.5rem; /*rem allows zoom function in browser whereas vw does not*/
 	text-align: center;
-	margin-left:15%;
-	margin-right:15%;
-	/* TODOadd margin top and bottom 15%?  */
+
+	/* TODOadd margin top and bottom 15%?	margin-left:15%;
+	margin-right:15%;  */
+
 }
 
 /*ABOUT page rule sets-----------------------------------------------------------*/
@@ -331,9 +329,6 @@ p.feature-text {
 	padding-top:5%;
 }
 
-p.about-text {
-	font-size: 0.9rem;
-}
 
 /*TODO DELETEplay with zoom levels -use same styling for reservations page*/
 /*#bg-fern {
@@ -376,6 +371,7 @@ p.about-text {
 .center-align {
 	/* centers buttons within page*/
 	text-align: center;
+	padding:10px;
 }
 
 /*TODO make buttons and event and function sections responsive*/
@@ -383,7 +379,7 @@ button {
 	position: relative;
 	background-color: #4b7990;
 	border: none;
-	font-size: 22px;
+	/*font-size:1rem;*/
 	color: #ffffff;
 	padding: 20px;
 	width: 250px;
@@ -393,7 +389,11 @@ button {
 	overflow: hidden;
 	cursor: pointer;
 	border-radius: 5px;
-	margin: 30px 10px 10px 10px;
+	/*margin: 30px 10px 10px 10px;*/
+}
+
+#button1, #button2 {
+	margin:5px;
 }
 
 button:disabled {
@@ -447,13 +447,12 @@ button:hover {
 /*TODO figure out mobile/responsive version of this page -what to do with images*/
 /*font styling of menus*/
 p.menu-item {
-	font-size:1.1rem;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 h4.menu-heading {
-	font-size:1.5rem;
+
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -461,7 +460,7 @@ p.menu-description,
 p.drinks {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: lighter;
-	font-size: 1rem;
+
 }
 
 
@@ -517,8 +516,10 @@ p.drinks {
 
 /*BLOG page rule sets-----------------------------------------------------*/
 
-
-
+/*makes responsive*/
+.blog-buttons  {
+	width:100%;
+}
 
 
 /*CONTACT page rule sets----------------------------------------------------*/
@@ -593,12 +594,13 @@ p.drinks {
 	display: block;
 	list-style-type: disc;
 	margin-top: 1em;
-	margin-bottom: 1 em;
+	margin-bottom: 1em;
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 40px;
 }
 
+/*privacy page links*/
 #priv-li {
 	float: none;
 }
@@ -606,59 +608,38 @@ p.drinks {
 /*STAFF page rule sets---------------------------------------------------*/
 
 
+
+
 /* MEDIA QUERIES -------------------------------------------------------*/
 
 /*small devices - mobiles 600px and less*/
 @media only screen and (max-width: 600px) {
-/*TODO add this text to other media queries?*/
-	p.feature-text{
-		font-size:18px;
-	}
-	/*get rid of visible slide container and expand image to take up screen width.*/
-	.mySlides {
-		width:100%;
-		margin:0;			
-
-	}
-	
-	#footer-links {
-		float:left;
-			
-	}	
 		
 	.icon-box {
 		display:none;
 	}
 
-	html{
-		font-size:15px;
-	}	/*TODO change to bruger menu*/
+	.icons {
+		display:none;
+		visibility: hidden;
+	}
+
+
+		/*TODO change to bruger menu*/
 
 	/*TODO this deletes map on contact page - 
 	also change size of that one*/
 	#map-container, #map {
 		display:none;
 	}
+
+
 }
-
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {  
-
-}*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/*@media only screen and (min-width: 600px) {*/
-
-
 
 
 /*small-medium devices such as portrait tablets 601-768px*/
 @media only screen and (max-width: 768px) {
 
-	
-	html{
-		font-size:17px;
-	}
 
 	/*TODO change to bruger menu
 	figure out where the menu should be positioned and what happens when 
@@ -712,62 +693,122 @@ p.drinks {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-	
-}
-
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-/*@media only screen and (min-width: 768px) {*/
-	/*medium devices - landscape tablets, small laptops 769-992px*/
-@media only screen and (max-width: 992px) {
-	/*delete the social media links for a more simplified mobile version*/
-	html{
-		font-size:20px;
-	}
-		/*get rid of slide container and expand image to take up screen width.*/
+	/*get rid of slide container and expand image to take up screen width.*/
 	#slide {
 		width:100%;
 		margin:0;
 	}
 
+	/*add to other columns on smaller screens*/
 	#footer-links {
 		float:left;
 		
 	}
+
+	#haukai {
+		font-size:2.3rem;
+	}
+
+	/*body text -16px*/
+	#restaurant {
+		font-size: 1rem;
+	}
+
+	h4.menu-heading, h3.body-heading {
+		font-size: 1.375rem;/*22px*/
+	}
+	p.menu-item, p.feature-text {
+		font-size: 1.1rem; /*17.6px*/
+	}
+
+	p.menu-description, p.drinks, p.about-text, button, .footer-container, .links a, .body-text {
+		font-size: 0.9375rem; /*15px*/
+	}
+
+	
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/*@media only screen and (min-width: 992px) {*/
 
-/* med-large devices -laptops/desktops 992-1200px*/
-@media only screen and (max-width: 1200px) {
-	html{
-		font-size:22px;
+
+/* Medium devices (landscape tablets, 768px - 991px) */
+@media only screen and (min-width: 768px) {
+		
+	/*get rid of slide container and expand image to take up screen width.*/
+	#slide {
+		width:100%;
+		margin:0;
+	}
+
+	#haukai {
+		font-size:2.8rem;
+	}
+
+	#restaurant {
+		font-size: 1.1rem;
+	}
+
+	p.feature-text {
+		font-size:1.375rem; /*22px*/
+	}
+	h4.menu-heading, h3.body-heading {
+		font-size: 1.5rem;/*24px*/
+	}
+	p.menu-item {
+		font-size: 1.2rem;/*19.2px*/
+	}
+	p.menu-description, p.drinks, p.about-text, button, .footer-container, .links a, .body-text {
+		font-size:1rem; /*16px*/
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px - 1199px) */
+@media only screen and (min-width: 992px) {
+	
+	#haukai {
+		font-size:3rem;
+	}
+
+	#restaurant {
+		font-size: 1.2rem;
+	}
+	h4.menu-heading, h3.body-heading, p.feature-text {
+		font-size: 1.625rem; /*26px*/
+	}
+
+	p.menu-item {
+		font-size: 1.3rem;/*20.8px*/
+	}
+
+	p.menu-description, p.drinks, .nav-link {
+		font-size:1.125rem;/*18px*/
 	}
 }
 
-/* large devices (large laptops and desktops, 1201px and up) */
-@media only screen and (min-width: 1201px) {
-	html{
-		font-size:24px;
+/* large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	
+	#haukai {
+		font-size:3.2rem;
 	}
+
+	#restaurant {
+		font-size: 1.3rem;
+	}
+
+	h4.menu-heading, h3.body-heading, p.feature-text {
+		font-size: 1.75rem; /*28px*/
+	}
+	
+	p.menu-item {
+		font-size: 1.4rem;/*22.4px*/
+	}
+	p.menu-description, p.drinks, .nav-link  {
+		font-size: 1.25rem;/*20px*/
+	}
+
+
 }
 
 
-
-
-/*
-@media only screen and (max-width: 500px) {
-
-	
-
-}
-
-/*mobile phones
-@media only screen and (max-width: 400px) {
-
-
-	
-}*/
 
