@@ -255,12 +255,6 @@ li a {
 
 }
 
-.links a {
-	
-/*	margin-bottom: 0;
-	margin-top:0;*/
-}
-
 #map {
 	height: 150px;
 	width: 150px;
@@ -276,10 +270,7 @@ li a {
 /*INDEX page rule sets------------------------------------------------*/
 .mySlides {
 	display:none;
-	/*width: 80%;
-	height: auto;
-	margin-left: 10%;
-	margin-right: 10%;*/
+
 }
 
 
@@ -312,9 +303,6 @@ p.feature-text {
 		serif;
 	text-align: center;
 
-	/* TODOadd margin top and bottom 15%?	margin-left:15%;
-	margin-right:15%;  */
-
 }
 
 /*ABOUT page rule sets-----------------------------------------------------------*/
@@ -330,31 +318,14 @@ p.feature-text {
 }
 
 
-/*TODO DELETEplay with zoom levels -use same styling for reservations page*/
-/*#bg-fern {
-	display:block;
-	opacity: 0.5;
-	position:absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: auto;
-	zoom:75%;
-
-}*/
-
-
 /*RESERVATIONS page rule sets-----------------------------------------------------------------------*/
-/*#reservation-img {
-	width: 100%;
-	opacity: 70%;
-}*/
+
 
 /*also about page*/
 .main {
 	overflow: hidden;
 	position: relative;
-	/*font-size:0.9rem;*/
+
 }
 
 #bg-img {
@@ -374,12 +345,11 @@ p.feature-text {
 	padding:10px;
 }
 
-/*TODO make buttons and event and function sections responsive*/
+
 button {
 	position: relative;
 	background-color: #4b7990;
 	border: none;
-	/*font-size:1rem;*/
 	color: #ffffff;
 	padding: 20px;
 	width: 250px;
@@ -389,7 +359,7 @@ button {
 	overflow: hidden;
 	cursor: pointer;
 	border-radius: 5px;
-	/*margin: 30px 10px 10px 10px;*/
+
 }
 
 #button1, #button2 {
@@ -584,15 +554,14 @@ p.drinks {
 	justify-content: center;
 }
 
-/*PRIVACY page rule sets----------------------------------------------*/
+/*PRIVACY and Staff page rule sets----------------------------------------------*/
 #priv-text {
 	display: block;
-	padding: 80px;
+	padding: 15%;
 }
 
 #list-style {
 	display: block;
-	list-style-type: disc;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-left: 0;
@@ -603,10 +572,8 @@ p.drinks {
 /*privacy page links*/
 #priv-li {
 	float: none;
+	list-style-type: disc;
 }
-
-/*STAFF page rule sets---------------------------------------------------*/
-
 
 
 
