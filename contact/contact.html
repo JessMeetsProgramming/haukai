@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+			charset="utf-8"
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0"
+		/>
+        <title>Contact Us | HAUKAI</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../scripts/nav-menu.js"></script>
+		<script src="../scripts/map.js"></script>
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-WO_yyVGR1t_t3FBXY2jtbOykxN_be54&callback=initMap&v=weekly"
+		async
+	  ></script>
+    </head>
+
+    <body>
+
+		<header class="header">
+
+			<img id="logo" src="../images/koru_logo3.svg" alt="Koru Design" />
+			<div class="centered">
+				<a href="../index.html"><h1 id="haukai">THE HAUKAI</h1>
+				<h2 id="restaurant">RESTAURANT</h2></a>
+			</div>
+			<div class="icon-box">
+				<a href="https://www.facebook.com/"><img src="../images/facebook-round-color.svg" class="icons" alt="facebook icon"/></a>
+				<a href="https://www.instagram.com/"><img src="../images/instagram-round.svg" class="icons" alt="instagram icon"/></a>
+			</div>
+
+		</header>
+
+
+		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
+		<nav class="topnav">
+			<ul class="nav-menu">
+				<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="../reservations/reservations.html">Reservations</a></li>
+				<div id="right-menu">
+					<li class="nav-item"><a class="nav-link" href="../menu/menu.html">Menu</a></li>
+					<li class="nav-item"><a class="nav-link" href="../blog/blog.html">Blog</a></li>
+					<li class="nav-item"><a class="active-link nav-link" href="../contact/contact.html">Contact</a></li>
+				</div>
+			</ul>
+			<div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+			
+		</nav>
+
+		<main class="main-container">
+
+			<div id="location">
+				<!--location text-->
+				<div class="column">
+					<h3 class="body-heading">Where to find us</h3>
+					<p>The Haukai Restaurant</p>
+					<p>1 Island Street<br/>Kerikeri<br/>Bay of Islands<br/>Ph: (09) 401 4019</p> 
+				</div>
+				<!--map-->
+				<div  id="map" ></div>
+				
+			</div>
+
+			<!--opening hours-->			
+			<div id="calendar-container">
+			
+				<h3 class="body-heading">When we are open</h3>
+				
+				<iframe id="calendar" src="https://calendar.google.com/calendar/embed?height=350&wkst=1&bgcolor=%23ffffff&ctz=Pacific%2FAuckland&title=Haukai%20Opening%20Hours&mode=WEEK&showPrint=0&showCalendars=0&showTz=0&showTabs=0&src=ZHBmN2d1NjdzMWJmcjlhdjVqYmtidTh0dDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23B39DDB" title="google calendar displaying opening days and hours" width="600" height="350" frameborder="0" scrolling="yes"></iframe>
+			</div>
+
+			<div id="contact-form">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWJ_P3pyaV6mcb5ELIwONBnKCOKA670JalDoKYf5xJlanufg/viewform?embedded=true" title="contact form" width="600" height="350" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			</div>
+
+
+		</main>
+
+		<footer class="footer-container">
+			<!--privacy statement link-->
+			<div class="column" id="footer-links">
+				<p class="links"><a class="links" href="../privacy/privacy.html">Privacy</a></p>
+				<p class="links"><a class="links" href="../staff/staff.html">Staff</a></p>
+			</div>
+
+		</footer>
+	</body>
+</html>
+
+
+</html>

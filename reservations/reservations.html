@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+			charset="utf-8"
+			name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1.0"
+		/>
+        <title>Reservations | HAUKAI</title>
+        <link rel="stylesheet" href="../styles/styles.css" />
+		<link
+		href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap"
+		rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../scripts/nav-menu.js"></script>
+		<script src="../scripts/reservations.js"></script>
+		<script src="../scripts/map.js"></script>
+		<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-WO_yyVGR1t_t3FBXY2jtbOykxN_be54&callback=initMap&v=weekly"
+		async
+	  ></script>
+    </head>
+
+    <body>
+
+		<header class="header">
+
+			<img id="logo" src="../images/koru_logo3.svg" alt="Koru Design" />
+			<div class="centered">
+				<a href="../index.html"><h1 id="haukai">THE HAUKAI</h1>
+				<h2 id="restaurant">RESTAURANT</h2></a>
+			</div>
+			<div class="icon-box">
+				<a href="https://www.facebook.com/"><img src="../images/facebook-round-color.svg" class="icons" alt="facebook icon"/></a>
+				<a href="https://www.instagram.com/"><img src="../images/instagram-round.svg" class="icons" alt="instagram icon"/></a>
+			</div>
+
+		</header>
+
+
+		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
+		<nav class="topnav">
+			<ul class="nav-menu">
+				<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
+				<li class="nav-item"><a class="active-link nav-link" href="../reservations/reservations.html">Reservations</a></li>
+				<div id="right-menu">
+					<li class="nav-item"><a class="nav-link" href="../menu/menu.html">Menu</a></li>
+					<li class="nav-item"><a class="nav-link" href="../blog/blog.html">Blog</a></li>
+					<li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
+				</div>
+			</ul>
+			<div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+			
+		</nav>
+
+
+		<main class="main">
+			<img id="bg-img" src="../images/reservation_large.jpg" alt="background booking image"/>
+
+			<div class="center-align"><button onclick="myFunction1()" id="button1">Functions</button>
+			  <button onclick="myFunction2()" disabled="true" id="button2">Book a Table</button>
+			</div>
+		  
+			<div class="content"  id="functions-section">
+			  <div class="blocks"><h3 class="body-heading">EVENTS</h3><p><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam in, dapibus aliquam mauris.Mauris sapien leo, condimentum non odio sed, vestibulum finibus odio.</p></div>
+			  <div class="blocks"><h3 class="body-heading">PRIVATE FUNCTIONS</h3><p><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam in, dapibus aliquam mauris.</p></div>
+			  <div class="blocks"><h3 class="body-heading">CHECK AVAILABILITY</h3><p><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam in, dapibus aliquam mauris. Mauris sapien leo, condimentum non odio sed, vestibulum finibus odio.</p></div>
+			  
+			</div>
+		  
+			<div class="content" id="booking-section">
+			  <iframe id="booking-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeNx1VX1BPGyHr7Quw_djzbEjcDdTsXAs4kXVmifDVrNrtxig/viewform?embedded=true" title="reservations form" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes">Loading…</iframe>
+				
+			</div>
+			
+		
+
+		</main>
+
+
+		<footer class="footer-container">
+			<!--address-->
+			<div class="column" id="address">
+				<p><strong>The Haukai Restaurant</strong><br />1 Island Street<br />Kerikeri<br />Bay of Islands<br />(09) 401 4019
+				</p>
+			</div>
+
+			<!--pinned map-->
+			<div class="column" id="map-container">
+				<div id="map"></div>
+			</div>
+
+			<!--Opening hours-->
+			<div class="column" id="footer-text">
+				<p><strong>Opening Hours</strong><br/>Wednesday-Sunday<br/>5.30-10.30pm</p>
+			</div>
+			<!--privacy statement link-->
+			<div class="column" id="footer-links">
+				<p class="links"><a class="links" href="../privacy/privacy.html">Privacy</a></p>
+				<p class="links"><a class="links" href="../staff/staff.html">Staff</a></p>
+			</div>
+
+		</footer>
+	</body>
+</html>
+
+
+</html>
