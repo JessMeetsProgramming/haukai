@@ -1,7 +1,9 @@
 //TODO figure out why it takes 2 or more clicks to get button functions to work on page load
+//$(document).ready(function() {
+//});
 
  function myFunction1() {
-  //get elements div and button elements by id
+  //get div and button elements by id
     var events = document.getElementById("functions-section");
     var bookings = document.getElementById("booking-section");
     var button1 = document.getElementById("button1");
@@ -22,7 +24,7 @@
   }
   
   function myFunction2() {
-    //get elements div and button elements by id
+    //get div and button elements by id
     var events = document.getElementById("functions-section");
     var bookings = document.getElementById("booking-section");
     var button2 = document.getElementById("button2");

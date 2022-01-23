@@ -20,7 +20,7 @@ html {
 body {
 	margin: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	
+
 }
 
 /*headings within body*/
@@ -285,7 +285,7 @@ li a {
 	width: 100%;
 }
 
-/*TODO change max-height? doesn't fill screen for all responsive views*/
+/*TODO change max-height? doesn't fill screen for all responsive views -surface pro 7*/
 .text-container {
 	display: inline-block;
 	background-color: whitesmoke;
@@ -411,7 +411,8 @@ button:hover {
 }
 
 /*MENU page rule sets-------------------------------------------------------*/
-/*TODO figure out mobile/responsive version of this page -what to do with images*/
+/*TODO figure out mobile/responsive version of this page -what to do with images -center 
+menu for mobile/tablet and put small images below??*/
 /*font styling of menus*/
 p.menu-item {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -506,18 +507,18 @@ p.drinks {
 	justify-content: center;
 }
 
-/*text div*/
+/*text div
 #location-text {
 	float: left; /*can delete as obsolete or change above to block 
-	and make use of clearfix below*/
+	and make use of clearfix below
 }
 
-/*currently not doing anything*/
+/*currently not doing anything
 #location-text:after {
 	content: "";
 	clear: both;
 	display: table;
-}
+}*/
 
 /*map div specific to contact page*/
 #location #map {
@@ -525,7 +526,7 @@ p.drinks {
 	max-width: 450px;
 	height: 350px;
 	width: 100%;
-	margin-top: 45px;
+	/*margin-top: px;*/
 	float: left;
 }
 
@@ -602,13 +603,18 @@ p.drinks {
 		font-size:10px;
 	}
 
-
-		/*TODO change to bruger menu*/
-
-	/*TODO this deletes map on contact page - 
-	also change size of that one*/
-	#map-container, #map {
+	#map-container {
 		display:none;
+	}
+
+	#location #map {
+		width:150px;
+		height:150px;
+	}
+
+	#location {
+		flex-direction: column;
+		align-items:center;
 	}
 
 
@@ -619,8 +625,7 @@ p.drinks {
 @media only screen and (max-width: 768px) {
 
 
-	/*TODO change to bruger menu
-	figure out where the menu should be positioned and what happens when 
+	/*TODO figure out where burger menu should be positioned and what happens when 
 	scrolling/using diff devices*/
 
 	.nav-menu {
