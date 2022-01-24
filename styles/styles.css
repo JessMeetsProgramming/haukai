@@ -414,14 +414,9 @@ button:hover {
 /*TODO figure out mobile/responsive version of this page -what to do with images -center 
 menu for mobile/tablet and put small images below??*/
 /*font styling of menus*/
-p.menu-item {
+p.menu-item, h4.menu-heading{
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-}
-
-h4.menu-heading {
-
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p.menu-description,
@@ -454,7 +449,7 @@ p.drinks {
 	/*center image*/
 	display: inline-block;
   	vertical-align: middle;
-
+	/*TODO padding or margin here?*/
 }
 
 /*alternate background color to differentiate between menus*/
@@ -584,39 +579,62 @@ p.drinks {
 
 /*small devices - mobiles 600px and less*/
 @media only screen and (max-width: 600px) {
-		
+	/*delete social media icons on mobile*/	
 	.icon-box {
 		display:none;
 	}
-
 	.icons {
 		display:none;
 		visibility: hidden;
 	}
-
+	
+	/*minimise size of each blog entry preview*/
 	.blog-text {
 		display:none;
 	}
-
 	.blog-buttons {
-	
 		font-size:10px;
 	}
 
+	/*delete map in footer for mobile*/
 	#map-container {
 		display:none;
 	}
-
+	/*adjust sizing of map on contact page*/
 	#location #map {
 		width:150px;
 		height:150px;
 	}
-
+	/*make map stack under text - contact page*/
 	#location {
 		flex-direction: column;
 		align-items:center;
 	}
 
+	/*responsive menu page*/
+	/*change position to fill screen*/
+	.myMenus {
+		width:100%;
+	}
+	/*center images underneath menu*/
+	#salmon, #ice-cream {
+		margin-left:0;	
+		padding-bottom: 5%;
+	}
+
+	/* reduce number of images*/
+	#lamb, #drinks {
+		display:none;
+	}
+
+	/*center menus*/
+	#appetisers,
+	#dessert,
+	#main-meals,
+	#beverages {
+		text-align:center;
+	}
+	
 
 }
 
@@ -742,6 +760,10 @@ p.drinks {
 	p.menu-description, p.drinks, p.about-text, button, .footer-container, .links a, .body-text {
 		font-size:1rem; /*16px*/
 	}
+
+
+	/*responsive menu page*/
+	/*change padding for menu/image use picture srcset for images*/
 
 }
 
