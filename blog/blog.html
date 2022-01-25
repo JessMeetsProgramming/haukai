@@ -33,8 +33,18 @@
 				<h2 id="restaurant">RESTAURANT</h2></a>
 			</div>
 			<div class="icon-box">
-				<a href="https://www.facebook.com/"><img src="../images/facebook-round-color.svg" class="icons" alt="facebook icon"/></a>
-				<a href="https://www.instagram.com/"><img src="../images/instagram-round.svg" class="icons" alt="instagram icon" /></a>
+				<a href="https://www.facebook.com/">
+					<picture> <!--prevent picture from loading when on small devices-->
+						<source srcset="../images/blank_img.png" media="(max-width:600px)"/>
+						<img src="../images/facebook-round-color.svg" class="icons" alt="facebook icon"/>
+					</picture>
+				</a>
+				<a href="https://www.instagram.com/">
+					<picture>
+						<source srcset="../images/blank_img.png" media="(max-width:600px)"/>
+						<img src="../images/instagram-round.svg" class="icons" alt="instagram icon"/>
+					</picture>
+				</a>
 			</div>
 
 		</header>
