@@ -1,6 +1,4 @@
-// if screen width is greater than 600px run the script
-if (document.documentElement.clientWidth > 600) {
- 
+
   // Initialize and add the map
   function initMap() {
 
@@ -25,6 +23,3 @@ if (document.documentElement.clientWidth > 600) {
       infowindow.open(map,marker);
 
   }
-
-}
-else {return;}
