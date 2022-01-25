@@ -10,24 +10,47 @@
 		<title>Home | HAUKAI</title>
 
 		<link rel="stylesheet" href="styles/styles.css" />
+		
+		
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<!--script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
 			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="scripts/nav-menu.js"></script>
 		<script src="scripts/map.js"></script>
 		<script src="scripts/slideshow.js"></script>
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-WO_yyVGR1t_t3FBXY2jtbOykxN_be54&callback=initMap&v=weekly"
 			async
-		></script>
-
+		></script-->
+	<script src="scripts/nav-menu.js"></script>
 	</head>
+
+	<script>// if viewportWidth width <= 991
+		if(window.innerWidth > 600){
+		  // load desktop script
+		  loadScriptFile('scripts/slideshow.js');
+		}
+		//else{ // viewportWidth width > 991
+		  // load desktop script
+		//  loadScriptFile('https://files.finsweet.com/webflowhacks/hack27-desktop.js');
+		//}
+		
+		// loadScriptFile func
+		function loadScriptFile(src){
+		  // create element <script>
+		  const $script = $('<script>');
+		  // add type attribute
+		  $script.attr('type', 'text/javascript');
+		  // add src attribute
+		  $script.attr('src', src);
+		  // append the <script> element to <head>
+		  $script.appendTo('head');
+		}
+	</script>
 
 	<body>
 		<!--Header with logo and restaurant name-->
