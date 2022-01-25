@@ -1,6 +1,3 @@
-//TODO figure out why it takes 2 or more clicks to get button functions to work on page load
-//$(document).ready(function() {
-//});
 
  function myFunction1() {
   //get div and button elements by id

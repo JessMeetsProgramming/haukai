@@ -21,7 +21,7 @@ h3.body-heading {
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
 		serif;
-	padding-top:10%;
+	padding-top:40px;
 }
 
 /*HEADER rule sets----------------------------------------------------*/
@@ -116,7 +116,7 @@ a.links {
 
 /* NAVIGATION rule sets --------------------------------------------*/
 
-/*menu container*/
+/*nav menu container*/
 .topnav {
 	overflow: hidden;
 	width:100%;
@@ -297,7 +297,7 @@ p.feature-text {
 	margin-right:10%;
 	text-align: left;
 	padding-bottom: 15%;
-	padding-top:10%;
+	padding-top:5%;
 }
 
 
@@ -305,10 +305,10 @@ p.feature-text {
 
 /* separate main container to position background image*/
 .main {
-	overflow: hidden;
 	position: relative;
-	height: 100vh;
-    width: 100%;
+	max-height: 100%;
+    width: 100%;	
+	overflow-y: auto;
 }
 
 
@@ -316,18 +316,18 @@ p.feature-text {
 	content:"";
 	background-image: url("../images/reservation_large.jpg");
 	background-size: cover;
+	/*background-repeat: repeat-y;*/
 	position:absolute;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 0px;
 	opacity: 0.85;
-}
 
+}
 
 /* centers buttons within page*/
 .center-align {
-
 	text-align: center;
 	padding:10px;
 }
@@ -365,6 +365,7 @@ button:hover {
 .content {
 	/*keep content on top of image*/
 	position: relative;
+
 }
 /*positioning*/
 #booking-section {
@@ -376,6 +377,8 @@ button:hover {
 /*responsive form*/
 #booking-form {
 	width: 100%;
+	padding:0;
+	margin:0;
 }
 
 #functions-section {
@@ -390,14 +393,20 @@ button:hover {
 .blocks {
 	background-color: whitesmoke;
 	border-radius: 7px;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+	width: 75%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
 	height: auto;
 	padding: 15px;
 	margin-bottom: 10px;
 	display: block;
 	text-align: left;
+
+}
+
+#functions-section h3.body-heading {
+	/*disable heading padding in this section*/
+	padding-top:0;
 }
 
 /*MENU page rule sets-------------------------------------------------------*/
@@ -521,7 +530,7 @@ p.drinks {
 /*position text*/
 #priv-text {
 	display: block;
-	padding: 15%;
+	padding: 5% 10% 10% 10%;
 }
 /*define list styles - bullet points and positioning*/
 #list-style {
@@ -826,6 +835,19 @@ p.drinks {
 	/*home -feature text container size up*/
 	.text-container {
 		padding: 20% 15%;
+	}
+
+	.blocks {
+		margin-top:20px;
+	}
+
+	.main {
+		padding-top:100px;
+		padding-bottom:100px;
+	}
+
+	#booking-form {
+		height: 50vh;
 	}
 
 }
