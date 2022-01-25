@@ -17,10 +17,8 @@ body {
 
 /*headings within body*/
 h3.body-heading {
-	font-weight:bold;
-	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
-		serif;
+	font-weight:bolder;
+	font-family: Dejavu Sans, Arial, Verdana, sans-serif;
 	padding-top:40px;
 }
 

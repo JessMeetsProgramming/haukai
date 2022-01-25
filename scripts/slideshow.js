@@ -19,9 +19,10 @@ if (document.documentElement.clientWidth > 600) {
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.display = "block";
-            const myTimeout = setTimeout(carousel, 6000); // Change image every 6 seconds
+            setTimeout(carousel, 6000); // Change image every 6 seconds
             
         }
 
     });
 }
+
