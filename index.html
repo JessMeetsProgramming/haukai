@@ -21,7 +21,7 @@
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="scripts/nav-menu.js"></script>
 		<script src="scripts/map.js"></script>
-		<!--script src="scripts/slideshow.js"></script-->
+		<script src="scripts/slideshow.js"></script>
 		<script
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-WO_yyVGR1t_t3FBXY2jtbOykxN_be54&callback=initMap&v=weekly"
 			async
@@ -80,35 +80,6 @@
 
 
 		<main class="main-container">
-			<script>
-			// if screen width is greater than 600px run the script
-				if (document.documentElement.clientWidth > 600) {
-				
-					//use jquery to run script at correct time
-					$(document).ready(function() {
-				
-						// declare slideindex variable to count slides
-						var slideIndex = 0;
-						// run function
-						carousel();
-				
-						// function to chnage the image every 6 seconds
-						function carousel() {
-							var i;
-							var x = document.getElementsByClassName("mySlides");
-							for (i = 0; i < x.length; i++) {
-								x[i].style.display = "none";
-							}
-							slideIndex++;
-							if (slideIndex > x.length) {slideIndex = 1}
-							x[slideIndex-1].style.display = "block";
-							const myTimeout = setTimeout(carousel, 6000); // Change image every 6 seconds
-							
-						}
-				
-					});
-				}
-			</script>
 			
 			<!--Slideshow container -->
 			<div class="slide-container">
@@ -122,11 +93,11 @@
 				</picture>
 
 				<picture class="mySlides" id="hidden">
-					<source srcset="images/blank_img.png" media="(max-width:600px)"/>
+					<source srcset="images/blank_img.png" media="(min-width:300px)"/>
 					<!--source id="slide" srcset="images/scallops_xs320.jpg" media="(max-width: 320px)" /-->
 					<!--source id="slide" srcset="images/scallops_small.jpg" media="(max-width: 640px)" /-->
-					<source id="slide" srcset="images/scallops_med.png" media="(max-width: 1280px)" />
-					<source id="slide" srcset="images/scallops_lrg.png" media="(max-width: 1920px)" />
+					<source id="slide" srcset="images/scallops_med.png" media="(min-width: 640px)" />
+					<source id="slide" srcset="images/scallops_lrg.png" media="(min-width: 1280px)" />
 					<img id="slide" src="images/scallops_lrg.png" alt="trio of scallops"/>
 				</picture>
 
