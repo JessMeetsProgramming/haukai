@@ -30,7 +30,7 @@
 	</head>
 
 	<body>
-
+		<!--Header with logo and restaurant name-->
 		<header class="header">
 				<img id="logo" src="images/koru_logo3.svg" alt="Koru Design" />
                 <div class="centered">
@@ -39,6 +39,7 @@
 						<h2 id="restaurant">RESTAURANT</h2></a
 					>
 				</div>
+				<!--Social media icons-->
 				<div class="icon-box">
 					<a href="https://www.facebook.com/">
 						<picture> <!--prevent picture from loading when on small devices-->
@@ -53,10 +54,9 @@
 						</picture>
 					</a>
 				</div>
-
-				
 			
 		</header>
+
 
 		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
 		<nav class="topnav">
@@ -84,7 +84,7 @@
 			<!--Slideshow container -->
 			<div class="slide-container">
                <!-- multiple sets of images for each slide-->
-				<picture class="mySlides">
+				<picture class="mySlides" id="visible">
 					<source id="slide" srcset="images/restaurant_table_xs320.jpg" media="(max-width: 320px)" />
 					<source id="slide" srcset="images/restaurant_table_small.jpg" media="(max-width: 640px)" />
 					<source id="slide" srcset="images/restaurant_table_med.png" media="(max-width: 1280px)" />
@@ -92,20 +92,22 @@
 					<img id="slide" src="images/restaurant_table_xs320.jpg" alt="haukai restaurant table setting" />
 				</picture>
 
-				<picture class="mySlides">
-					<source id="slide" srcset="images/scallops_xs320.jpg" media="(max-width: 320px)" />
-					<source id="slide" srcset="images/scallops_small.jpg" media="(max-width: 640px)" />
+				<picture class="mySlides" id="hidden">
+					<source srcset="images/blank_img.png" media="(max-width:600px)"/>
+					<!--source id="slide" srcset="images/scallops_xs320.jpg" media="(max-width: 320px)" /-->
+					<!--source id="slide" srcset="images/scallops_small.jpg" media="(max-width: 640px)" /-->
 					<source id="slide" srcset="images/scallops_med.png" media="(max-width: 1280px)" />
 					<source id="slide" srcset="images/scallops_lrg.png" media="(max-width: 1920px)" />
-					<img id="slide" src="images/scallops_xs320.jpg" alt="trio of scallops"/>
+					<img id="slide" src="images/scallops_lrg.png" alt="trio of scallops"/>
 				</picture>
 
-				<picture class="mySlides">
-					<source id="slide" srcset="images/food_design_xs320.jpg" media="(max-width: 320px)" />
-					<source id="slide" srcset="images/food_design_small.jpg" media="(max-width: 640px)" />
+				<picture class="mySlides" id="hidden" >
+					<source srcset="images/blank_img.png" media="(max-width:600px)"/>
+					<!--source id="slide" srcset="images/food_design_xs320.jpg" media="(max-width: 320px)" /-->
+					<!--source id="slide" srcset="images/food_design_small.jpg" media="(max-width: 640px)" /-->
 					<source id="slide" srcset="images/food_design_med.png" media="(max-width: 1280px)" />
 					<source id="slide" srcset="images/food_design_lrg.png" media="(max-width: 1920px)" />
-					<img id="slide" src="images/food_design_xs320.jpg" alt="chef plating artfully"/>
+					<img id="slide" src="images/food_design_lrg.png" alt="chef plating artfully"/>
 				</picture>
 
             </div>

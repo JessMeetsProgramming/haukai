@@ -563,6 +563,14 @@ p.drinks {
 	.icon-box {
 		display:none;
 	}
+	/*hide slideshow*/
+	#hidden {
+		display:none;
+	}
+	/*display first pic of slides*/
+	#visible {
+		display:block;
+	}
 
 	/*minimise size of each blog entry preview*/
 	.blog-text {
