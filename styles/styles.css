@@ -4,14 +4,20 @@
 
 }
 
-html {
-	font-size:62.5%;
+html, body {
+	/*font-size:62.5%;*/
+	font-size: 15px;
 } 	
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
 
 /* BODY rule sets-------------------------------------------------*/
 body {
 	margin:0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display:block;
 
 }
 

@@ -1,9 +1,12 @@
+
 // if screen width is greater than 600px run the script
 if (document.documentElement.clientWidth > 600) {
 
-    //use jquery to run script at correct time
+    //run script when document has loaded
     $(document).ready(function() {
-
+    //document.onreadystatechange = function () {
+       // if (document.readyState == "complete") {
+       
         // declare slideindex variable to count slides
         var slideIndex = 0;
         // run function
@@ -23,6 +26,9 @@ if (document.documentElement.clientWidth > 600) {
             
         }
 
+    //}
+    //}
     });
+
 }
 
