@@ -369,6 +369,7 @@ button:hover {
 /*positioning*/
 #booking-section {
 	text-align: center;
+	display: none;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -382,7 +383,7 @@ button:hover {
 
 #functions-section {
 	/*hide on page load*/
-	display: none;
+	/*display: none;*/
 	/* positioning*/
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -607,9 +608,6 @@ p.drinks {
 
 }
 
-@media only screen and (min-width: 601px) {
-	
-}
 
 /*small-medium devices such as portrait tablets 601-768px*/
 @media only screen and (max-width: 768px) {
