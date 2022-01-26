@@ -279,8 +279,8 @@ li a {
 /* text styling*/
 p.feature-text {
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
-		serif !important;
+	"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
+	serif;
 	text-align: center;
 }
 
@@ -601,7 +601,7 @@ p.drinks {
 
 	/*change font to reduce loading speed*/
 	p.feature-text {
-		font-family:cursive;
+		font-family:cursive!important;
 	}
 
 }
@@ -772,6 +772,7 @@ p.drinks {
 		background-image: url("../images/reservation_L.jpg");
 	}
 
+
 }
 
 
@@ -800,6 +801,7 @@ p.drinks {
 	.main::before {
 		background-image: url("../images/reservation_XL.jpg");
 	}
+
 
 }
 
@@ -839,6 +841,7 @@ p.drinks {
 	#booking-form {
 		height: 50vh;
 	}
+
 
 }
 
