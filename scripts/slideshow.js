@@ -3,7 +3,7 @@
 $(window).resize( function() {
     // if user resizes the window refresh the page to run script 
     window.location.href = window.location.href;
-});  
+  
        
     // if screen width is greater than 600px run the script
     if (document.documentElement.clientWidth > 600) {
@@ -33,3 +33,4 @@ $(window).resize( function() {
 
         });
     }
+});
