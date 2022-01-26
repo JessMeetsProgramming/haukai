@@ -282,7 +282,6 @@ p.feature-text {
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
 		serif !important;
 	text-align: center;
-
 }
 
 /*ABOUT page rule sets-----------------------------------------------------------*/
@@ -552,7 +551,6 @@ p.drinks {
 
 
 /* MEDIA QUERIES -------------------------------------------------------*/
-
 /*small devices - mobiles 600px and less*/
 @media only screen and (max-width: 600px) {
 	/*delete social media icon box (links) on mobile*/	
@@ -844,3 +842,4 @@ p.drinks {
 	}
 
 }
+
