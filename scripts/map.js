@@ -2,10 +2,10 @@
   // Initialize and add the map
   function initMap() {
 
-    var haukai = {lat: -35.218147, lng: 173.957414};//{lat: -35.217653808420614, lng: 173.9573953838288}; 
+    var haukai = {lat: -35.218147, lng: 173.957414};
   
     var map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,//15.5,
+      zoom: 16,
       center: haukai,
       disableDefaultUI: true,
     });

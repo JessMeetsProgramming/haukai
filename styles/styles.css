@@ -5,7 +5,6 @@
 }
 
 html, body {
-	/*font-size:62.5%;*/
 	font-size: 15px;
 } 	
 
@@ -212,7 +211,7 @@ li a {
 .footer-container {
 	background-color: #d2ddd8;
 	height: auto;
-	margin-bottom: 0; /*get rid of extra white space after footer*/
+	margin-bottom: 0; 
 	padding-left: 20px;
 	padding-right:20px;
 	width: 100%;
@@ -230,17 +229,9 @@ li a {
 
 /*display footer columns in a row*/
 #address,
-#map-container,
 #footer-text {
 	float: left;
 	line-height: 2;
-}
-
-#map {
-	display:none;
-	height: 150px;
-	width: 150px;
-	margin: 25px;
 }
 
 /* privacy and staff links*/
@@ -285,7 +276,7 @@ li a {
 	height:auto;
 	padding: 10% 15%;
 }
-/*text styling*/
+/* TODO responsive text styling*/
 p.feature-text {
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
@@ -495,8 +486,8 @@ p.drinks {
 	justify-content: center;
 }
 
-/*map div specific to contact page*/
-#location #map {
+/*map display*/
+#map {
 	max-height: 450px;
 	max-width: 450px;
 	height: 350px;
@@ -585,35 +576,15 @@ p.drinks {
 		font-size:10px;
 	}
 
-	/*delete map in footer for mobile*/
-	#map-container {
-		display:none;
-	}
 	/*adjust sizing of map on contact page*/
-	#location #map {
-		width:150px;
+	#map {
+		width:200px;
 		height:150px;
 	}
 	/*make map stack under text - contact page*/
 	#location {
 		flex-direction: column;
 		align-items:center;
-	}
-
-	/*responsive menu page*/
-	/*change position to fill screen*/
-	.myMenus {
-		width:100%;
-	}
-	/*center images underneath menu*/
-	#salmon, #ice-cream {
-		margin-left:0;	
-		padding-bottom: 5%;
-	}
-
-	/* reduce number of images*/
-	#lamb, #drinks {
-		display:none;
 	}
 
 	/*center menus*/
@@ -629,12 +600,15 @@ p.drinks {
 		background-image: url("../images/reservation_XS.jpg");
 	}
 
+	/*change font to reduce loading speed*/
+	p.feature-text {
+		font-family:cursive;
+	}
+
 }
 
 @media only screen and (min-width: 601px) {
-	#map {
-		display:block;
-	}
+	
 }
 
 /*small-medium devices such as portrait tablets 601-768px*/
@@ -707,6 +681,10 @@ p.drinks {
 	#footer-links {
 		float:left;
 		
+	}
+	/*change menu width when images are hidden*/
+	.myMenus {
+		width:100%;
 	}
 
 	#haukai {
