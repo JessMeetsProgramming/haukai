@@ -1,12 +1,16 @@
+// if user resizes the window refresh the page to run script    
+$(window).resize( function() {
 
+    window.location.href = window.location.href;
+});  
+       
 // if screen width is greater than 600px run the script
 if (document.documentElement.clientWidth > 600) {
 
+
     //run script when document has loaded
     $(document).ready(function() {
-    //document.onreadystatechange = function () {
-       // if (document.readyState == "complete") {
-       
+    
         // declare slideindex variable to count slides
         var slideIndex = 0;
         // run function
@@ -22,13 +26,14 @@ if (document.documentElement.clientWidth > 600) {
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 6000); // Change image every 6 seconds
+            setTimeout(carousel, 2000); // Change image every 6 seconds
             
         }
 
-    //}
-    //}
     });
-
 }
+
+
+
+
 
