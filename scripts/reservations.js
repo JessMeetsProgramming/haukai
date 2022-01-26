@@ -1,5 +1,4 @@
-
- function myFunction1() {
+function myFunction1() {
   //get div and button elements by id
     var events = document.getElementById("functions-section");
     var bookings = document.getElementById("booking-section");
@@ -39,5 +38,3 @@
       bookings.style.display = "none";
     }
   }
-
-
