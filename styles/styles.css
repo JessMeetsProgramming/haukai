@@ -614,7 +614,6 @@ p.drinks {
         position: fixed;/* stay in place*/
         left: -100%;
         top:0;
-        /*flex-direction: column;*/
         background-color: #fff;
         width: 100%;
 		height: 100vh;
