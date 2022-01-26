@@ -706,7 +706,7 @@ p.drinks {
 
 	/* alternative image sizes for reservations page*/
 	.main::before {
-		background-image: url("../images/reservation_S.jpg");
+		background-image: url("../images/reservation_S_webp.webp");
 	}
 
 }
