@@ -276,7 +276,7 @@ li a {
 	height:auto;
 	padding: 10% 15%;
 }
-/* TODO responsive text styling*/
+/* text styling*/
 p.feature-text {
 	font-family: "Baloo 2", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif, Times, "Times New Roman",
@@ -300,7 +300,7 @@ p.feature-text {
 
 /*RESERVATIONS page rule sets-----------------------------------------------------------------------*/
 
-/* separate main container to position background image*/
+/* main container*/
 .main {
 	position: relative;
 	max-height: 100%;
@@ -313,7 +313,6 @@ p.feature-text {
 	content:"";
 	background-image: url("../images/reservation_large.jpg");
 	background-size: cover;
-	/*background-repeat: repeat-y;*/
 	position:absolute;
 	top: 0px;
 	right: 0px;
@@ -598,7 +597,8 @@ p.drinks {
 	
 	/* alternative image sizes for reservations page*/
 	.main::before {
-		background-image: url("../images/reservation_XS.jpg");
+		background-image: url("../images/reservation_XS_webp.webp");
+
 	}
 
 	/*change font to reduce loading speed*/
