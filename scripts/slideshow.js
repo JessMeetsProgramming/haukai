@@ -33,8 +33,3 @@ $(window).resize( function() {
 
         });
     }
-
-
-
-
-
