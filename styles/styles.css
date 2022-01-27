@@ -115,8 +115,7 @@ a {
 }
 
 a.links {
-	/*rgb(71, 144, 238) */
-	color:#a51cfd;
+	color:#0f63ff;
 }
 
 
@@ -171,12 +170,12 @@ li a {
 
 /*hover color of links*/
 .nav-link:hover{
-    color: #0e875a;/*rgb(5, 163, 58);*/
+    color: #009b6c;
 }
 
 /* active link text color and styling */
 .active-link {
-	color: #0e875a;/*rgb(5, 163, 58);*/
+	color:#009b6c;
 	text-decoration: underline;
 	text-underline-offset: 4px;
 	font-weight:bold;
@@ -640,8 +639,9 @@ p.drinks {
 		float:none;
 	}
 
+	/*menu icon*/
     .hamburger {
-        display: flex;  /*block;*/
+        display: flex; 
 		flex-direction: column;
         cursor: pointer;
 		float:right;
