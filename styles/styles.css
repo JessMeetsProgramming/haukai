@@ -111,10 +111,12 @@ h3.body-heading {
 a {
 	text-decoration: none;
 	color: black;
+	
 }
 
 a.links {
-	color:rgb(71, 144, 238) !important;
+	/*rgb(71, 144, 238) */
+	color:#a51cfd;
 }
 
 
@@ -169,12 +171,12 @@ li a {
 
 /*hover color of links*/
 .nav-link:hover{
-    color: rgb(5, 163, 58);
+    color: #0e875a;/*rgb(5, 163, 58);*/
 }
 
 /* active link text color and styling */
 .active-link {
-	color: rgb(5, 163, 58);
+	color: #0e875a;/*rgb(5, 163, 58);*/
 	text-decoration: underline;
 	text-underline-offset: 4px;
 	font-weight:bold;
@@ -243,7 +245,7 @@ li a {
 
 }
 #footer-links a:hover {
-	color: rgb(71, 144, 238);
+	color: #16D6FA; /*rgb(71, 144, 238);*/
 }
 
 
@@ -410,7 +412,7 @@ button:hover {
 /*MENU page rule sets-------------------------------------------------------*/
 
 /*font styling of menus*/
-p.menu-item, h4.menu-heading{
+p.menu-item, h3.menu-heading{
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -690,7 +692,7 @@ p.drinks {
 		font-size: 1rem; /*16px*/
 	}
 
-	h4.menu-heading, h3.body-heading {
+	h3.menu-heading, h3.body-heading {
 		font-size: 1.375rem;/*22px*/
 	}
 	p.menu-item, p.feature-text {
@@ -730,7 +732,7 @@ p.drinks {
 	p.feature-text {
 		font-size:1.375rem; /*22px*/
 	}
-	h4.menu-heading, h3.body-heading {
+	h3.menu-heading, h3.body-heading {
 		font-size: 1.5rem;/*24px*/
 	}
 	p.menu-item {
@@ -756,7 +758,7 @@ p.drinks {
 	#restaurant {
 		font-size: 1.2rem;/*19.2px*/
 	}
-	h4.menu-heading, h3.body-heading, p.feature-text {
+	h3.menu-heading, h3.body-heading, p.feature-text {
 		font-size: 1.625rem; /*26px*/
 	}
 
@@ -787,7 +789,7 @@ p.drinks {
 		font-size: 1.3rem; /*20.8px */
 	}
 
-	h4.menu-heading, h3.body-heading, p.feature-text {
+	h3.menu-heading, h3.body-heading, p.feature-text {
 		font-size: 1.75rem; /*28px*/
 	}
 	
