@@ -1,115 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta
+	<head>
+		<meta
 			charset="utf-8"
 			name="viewport"
 			content="width=device-width, height=device-height, initial-scale=1.0"
 		/>
-        <title>Reservations | HAUKAI</title>
-        <link rel="stylesheet" href="../styles/styles.css" />
+		<title>Reservations | HAUKAI</title>
+
 		<!--W3.CSS framework link-->
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">			
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="../styles/styles.css" />
 		<script src="../scripts/nav-menu.js"></script>
 		<script src="../scripts/reservations.js"></script>
-		
-    </head>
+	</head>
 
-    <body>
-
-		<header class="header">
-
-			<img id="logo" src="../images/koru_logo3.svg" alt="Koru Design" />
-			<div class="centered">
-				<a href="../index.html"><h1 id="haukai">THE HAUKAI</h1>
-				<h2 id="restaurant">RESTAURANT</h2></a>
+	<body>
+		<!--Header with logo and restaurant name-->
+		<header class="w3-container w3-light-gray">
+			<!--use display container to center text on top of the logo-->
+			<div class="w3-display-container w3-center w3-padding w3-margin">
+				<img
+					class="w3-opacity"
+					id="logo"
+					src="../images/koru_logo3.svg"
+					alt="Koru Design"
+				/>
+				<!--display-middle centers headers within display-container-->
+				<a href="../index.html" class="w3-display-middle">
+					<!--default headings in w3.css are segoe ui-->
+					<h1 id="haukai">THE HAUKAI</h1>
+					<h2 id="restaurant"><b>RESTAURANT</b></h2>
+				</a>
 			</div>
-			<div class="icon-box">
+
+			<!--Social media icons/links-->
+			<div class="w3-container w3-display-topright w3-padding">
 				<a href="https://www.facebook.com/">
-					<picture> <!--prevent picture from loading when on small devices-->
-						<source srcset="../images/blank_img.png" media="(max-width:600px)"/>
-						<img src="../images/facebook-round-color.svg" class="icons" alt="facebook icon"/>
+					<!--Facebook icon-->
+					<picture>
+						<!--prevent picture from loading when on small devices-->
+						<source
+							srcset="../images/blank_img.png"
+							media="(max-width:600px)"
+						/>
+						<img
+							src="../images/facebook-round-color.svg"
+							class="icons"
+							alt="facebook icon"
+						/>
 					</picture>
 				</a>
 				<a href="https://www.instagram.com/">
+					<!--Instagram icon-->
 					<picture>
-						<source srcset="../images/blank_img.png" media="(max-width:600px)"/>
-						<img src="../images/instagram-round.svg" class="icons" alt="instagram icon"/>
+						<!--prevent picture from loading when on small devices-->
+						<source
+							srcset="../images/blank_img.png"
+							media="(max-width:600px)"
+						/>
+						<img
+							src="../images/instagram-round.svg"
+							class="icons"
+							alt="instagram icon"
+						/>
 					</picture>
 				</a>
 			</div>
-
 		</header>
 
-
 		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
-		<nav class="topnav">
-			<ul class="nav-menu">
-				<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
-				<li class="nav-item"><a class="active-link nav-link" href="../reservations/reservations.html" aria-current="page">Reservations</a></li>
-			</ul>	
-			<div id="right-menu">
-				<ul class="nav-menu">
-					<li class="nav-item"><a class="nav-link" href="../menu/menu.html">Menu</a></li>
-					<li class="nav-item"><a class="nav-link" href="../blog/blog.html">Blog</a></li>
-					<li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
-				</ul>
-			</div>
-			
+		<nav class="w3-bar w3-light-gray w3-large w3-mobile">
+			<!--keeping ul and li tags for screen readers-->
+			<ul class="nav-menu w3-mobile">
+				<!--w3-mobile applies block display and 100% width-->
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+					<a class="w3-hover-text-teal" href="../index.html">Home</a>
+				</li>
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+					<a class="w3-hover-text-teal" href="../about/about.html">About</a>
+				</li>
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+					<a
+						class="w3-hover-text-teal active-link"
+						href="../reservations/reservations.html"
+						aria-current="page"
+						>Reservations</a
+					>
+				</li>
+				<!--Float this block of menu items right-->
+				<div class="w3-right w3-mobile">
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+						<a class="w3-hover-text-teal" href="../menu/menu.html">Menu</a>
+					</li>
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+						<a class="w3-hover-text-teal" href="../blog/blog.html">Blog</a>
+					</li>
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+						<a class="w3-hover-text-teal" href="../contact/contact.html"
+							>Contact</a
+						>
+					</li>
+				</div>
+			</ul>
+
+			<!--hamburger icon display for mobile-->
 			<div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-			
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
 
-
 		<main class="main" id="no-bg-img">
-			
 			<div class="center-align">
-			  <button onclick="myFunction1()"  disabled="true" id="button1">Functions</button>
-			  <button onclick="myFunction2()" id="button2">Book a Table</button>
+				<button onclick="myFunction1()" disabled="true" id="button1">
+					Functions
+				</button>
+				<button onclick="myFunction2()" id="button2">Book a Table</button>
 			</div>
-		  
-			<div class="content functions-section"  id="functions-section">
-			  <div class="blocks"><h3 class="body-heading">EVENTS</h3><p class="body-text"><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam in, dapibus aliquam mauris.Mauris sapien leo, condimentum non odio sed, vestibulum finibus odio.</p></div>
-			  <div class="blocks"><h3 class="body-heading">PRIVATE FUNCTIONS</h3><p class="body-text"><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam in, dapibus aliquam mauris.</p></div>
-			  <div class="blocks"><h3 class="body-heading">CHECK AVAILABILITY</h3><p class="body-text"><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam in, dapibus aliquam mauris. Mauris sapien leo, condimentum non odio sed, vestibulum finibus odio.</p></div>
-			  
+
+			<div class="content functions-section" id="functions-section">
+				<div class="blocks">
+					<h3 class="body-heading">EVENTS</h3>
+					<p class="body-text">
+						<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam
+						in, dapibus aliquam mauris.Mauris sapien leo, condimentum non odio
+						sed, vestibulum finibus odio.
+					</p>
+				</div>
+				<div class="blocks">
+					<h3 class="body-heading">PRIVATE FUNCTIONS</h3>
+					<p class="body-text">
+						<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam
+						in, dapibus aliquam mauris.
+					</p>
+				</div>
+				<div class="blocks">
+					<h3 class="body-heading">CHECK AVAILABILITY</h3>
+					<p class="body-text">
+						<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Pellentesque sed posuere odio. Nulla quam nisi, porttitor in diam
+						in, dapibus aliquam mauris. Mauris sapien leo, condimentum non odio
+						sed, vestibulum finibus odio.
+					</p>
+				</div>
 			</div>
-		  
+
 			<div class="content booking-section" id="booking-section">
-			  <iframe id="booking-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeNx1VX1BPGyHr7Quw_djzbEjcDdTsXAs4kXVmifDVrNrtxig/viewform?embedded=true" title="reservations form" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes" loading="lazy">Loading…</iframe>
-				
+				<iframe
+					id="booking-form"
+					src="https://docs.google.com/forms/d/e/1FAIpQLSeNx1VX1BPGyHr7Quw_djzbEjcDdTsXAs4kXVmifDVrNrtxig/viewform?embedded=true"
+					title="reservations form"
+					width="600"
+					height="400"
+					frameborder="0"
+					marginheight="0"
+					marginwidth="0"
+					scrolling="yes"
+					loading="lazy"
+					>Loading…</iframe
+				>
 			</div>
-			
-		
-
 		</main>
-
 
 		<footer class="footer-container">
 			<!--address-->
 			<div class="column" id="address">
-				<p><strong>The Haukai Restaurant</strong><br />1 Island Street<br />Kerikeri<br />Bay of Islands<br />(09) 401 4019
+				<p>
+					<strong>The Haukai Restaurant</strong><br />1 Island Street<br />Kerikeri<br />Bay
+					of Islands<br />(09) 401 4019
 				</p>
 			</div>
 
 			<!--Opening hours-->
 			<div class="column" id="footer-text">
-				<p><strong>Opening Hours</strong><br/>Wednesday-Sunday<br/>5.30-10.30pm</p>
+				<p>
+					<strong>Opening Hours</strong><br />Wednesday-Sunday<br />5.30-10.30pm
+				</p>
 			</div>
 			<!--privacy statement link-->
 			<div class="column" id="footer-links">
-				<p class="links"><a class="links" href="../privacy/privacy.html">Privacy</a></p>
-				<p class="links"><a class="links" href="../staff/staff.html">Staff</a></p>
+				<p class="links">
+					<a class="links" href="../privacy/privacy.html">Privacy</a>
+				</p>
+				<p class="links">
+					<a class="links" href="../staff/staff.html">Staff</a>
+				</p>
 			</div>
-
 		</footer>
 	</body>
-</html>
-
-
 </html>

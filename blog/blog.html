@@ -7,8 +7,9 @@
 			content="width=device-width, height=device-height, initial-scale=1.0"
 		/>
         <title>Blog | HAUKAI</title>
-        <link rel="stylesheet" href="../styles/styles.css" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!--W3.css framework link-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
+		<link rel="stylesheet" href="../styles/styles.css" />
 	
 		<script src="../scripts/nav-menu.js"></script>
 
@@ -16,51 +17,103 @@
 
     <body class="w3-light-grey">
 
-		<header class="header">
+		<!--Header with logo and restaurant name-->
+		<header class="w3-container w3-light-gray">
 
-			<img id="logo" src="../images/koru_logo3.svg" alt="Koru Design" />
-			<div class="centered">
-				<a href="../index.html"><h1 id="haukai">THE HAUKAI</h1>
-				<h2 id="restaurant">RESTAURANT</h2></a>
+			<!--use display container to center text on top of the logo-->
+			<div class="w3-display-container w3-center w3-padding w3-margin">
+				<img
+					class="w3-opacity"
+					id="logo"
+					src="../images/koru_logo3.svg"
+					alt="Koru Design"
+				/>
+				<!--display-middle centers headers within display-container-->
+				<a href="../index.html" class="w3-display-middle">
+					<!--default headings in w3.css are segoe ui-->
+					<h1 id="haukai">THE HAUKAI</h1>
+					<h2 id="restaurant"><b>RESTAURANT</b></h2>
+				</a>
 			</div>
-			<div class="icon-box">
+
+			<!--Social media icons/links-->
+			<div class="w3-container w3-display-topright w3-padding">
 				<a href="https://www.facebook.com/">
-					<picture> <!--prevent picture from loading when on small devices-->
-						<source srcset="../images/blank_img.png" media="(max-width:600px)"/>
-						<img src="../images/facebook-round-color.svg" class="icons" alt="facebook icon"/>
+					<!--Facebook icon-->
+					<picture>
+						<!--prevent picture from loading when on small devices-->
+						<source
+							srcset="../images/blank_img.png"
+							media="(max-width:600px)"
+						/>
+						<img
+							src="../images/facebook-round-color.svg"
+							class="icons"
+							alt="facebook icon"
+						/>
 					</picture>
 				</a>
 				<a href="https://www.instagram.com/">
+					<!--Instagram icon-->
 					<picture>
-						<source srcset="../images/blank_img.png" media="(max-width:600px)"/>
-						<img src="../images/instagram-round.svg" class="icons" alt="instagram icon"/>
+						<!--prevent picture from loading when on small devices-->
+						<source
+							srcset="../images/blank_img.png"
+							media="(max-width:600px)"
+						/>
+						<img
+							src="../images/instagram-round.svg"
+							class="icons"
+							alt="instagram icon"
+						/>
 					</picture>
 				</a>
 			</div>
-
 		</header>
 
 		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
-		<nav class="topnav">
-			<ul class="nav-menu">
-				<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="../about/about.html">About</a></li>
-				<li class="nav-item"><a class="nav-link" href="../reservations/reservations.html">Reservations</a></li>
-			</ul>	
-			<div id="right-menu">
-				<ul class="nav-menu">
-					<li class="nav-item"><a class="nav-link" href="../menu/menu.html">Menu</a></li>
-					<li class="nav-item"><a class="active-link nav-link" href="../blog/blog.html" aria-current="page">Blog</a></li>
-					<li class="nav-item"><a class="nav-link" href="../contact/contact.html">Contact</a></li>
-				</ul>
-			</div>
-			
+		<nav class="w3-bar w3-light-gray w3-large w3-mobile">
+			<!--keeping ul and li tags for screen readers-->
+			<ul class="nav-menu w3-mobile">
+				<!--w3-mobile applies block display and 100% width-->
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+					<a class="w3-hover-text-teal" href="../index.html">Home</a>
+				</li>
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+					<a
+						class="w3-hover-text-teal"
+						href="../about/about.html"
+						>About</a
+					>
+				</li>
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+					<a class="w3-hover-text-teal" href="../reservations/reservations.html"
+						>Reservations</a
+					>
+				</li>
+				<!--Float this block of menu items right-->
+				<div class="w3-right w3-mobile">
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+						<a class="w3-hover-text-teal" href="../menu/menu.html"
+						>Menu</a>
+					</li>
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+						<a class="w3-hover-text-teal active-link" href="../blog/blog.html" aria-current="page">Blog</a>
+					</li>
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile">
+						<a class="w3-hover-text-teal" href="../contact/contact.html"
+							>Contact</a
+						>
+					</li>
+				</div>
+			</ul>
+
+			<!--hamburger icon display for mobile-->
 			<div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-			
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
 
 		<main class="blog">
@@ -163,4 +216,3 @@
 </html>
 
 
-</html>

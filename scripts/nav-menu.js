@@ -25,3 +25,31 @@ document.onreadystatechange = function () {
         }
     }
 }
+
+/*document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        
+        const hamburger = document.querySelector(".hamburger");
+        const close = document.querySelector(".close");
+        const navMenu = document.querySelector(".nav-menu");
+        const centerText = document.querySelector(".w3-right");
+
+        //wait for click on menu icon
+        hamburger.addEventListener("click", mobileMenu);
+    
+        // function to make the mobile menu display 
+        function mobileMenu() {
+            //hide hamburger icon on click event
+            hamburger.className = hamburger.className.replace(" w3-show", " w3-hide");
+            //display close icon on click
+            close.className = close.className.replace(" w3-hide", " w3-show");
+            //display menu 
+            navMenu.className = navMenu.className.replace("w3-hide-small", "");
+            //eliminates right alignment of menu items 
+            centerText.className = centerText.className.replace("w3-right", "w3-center"); 
+        }
+
+      
+
+    }
+}*/
