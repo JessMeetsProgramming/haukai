@@ -9,15 +9,18 @@
 
 		<title>Home | HAUKAI</title>
 
+		<!--W3.CSS framework stylesheet (primary styling)-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">		
+		<!--My CSS rules (secondary styling)-->
 		<link rel="stylesheet" href="styles/styles.css" />
+
 		<!--google fonts api-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
 			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<!--W3.CSS framework link-->
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 		<!--JQuery library-->
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!--slideshow and navigation scripts-->
@@ -29,24 +32,33 @@
 	
 	<body>
 		<!--Header with logo and restaurant name-->
-		<header class="header">
-				<img id="logo" src="images/koru_logo3.svg" alt="Koru Design" />
-                <div class="centered">
-					<a href="index.html"
-						><h1 id="haukai">THE HAUKAI</h1>
-						<h2 id="restaurant">RESTAURANT</h2></a
-					>
+		<header class="w3-container w3-light-gray" ><!--header"-->
+
+				<!--use display container to center text on top of the logo-->
+                <div class="w3-display-container w3-center w3-padding w3-margin"><!--"centered"-->
+					<img class="w3-opacity" id="logo" src="images/koru_logo3.svg" alt="Koru Design" />
+					<!--display middle centers headers within display container-->
+					<a href="index.html" class="w3-display-middle">
+						<!--default headings in w3.css are segoe ui-->
+						<h1 id="haukai">THE HAUKAI</h1>
+						<h2 id="restaurant"><b>RESTAURANT</b></h2>
+					</a>
 				</div>
-				<!--Social media icons-->
-				<div class="icon-box">
+
+				<!--Social media icons/links-->
+				<div class="w3-container w3-display-topright w3-padding"><!--"icon-box"-->
 					<a href="https://www.facebook.com/">
-						<picture> <!--prevent picture from loading when on small devices-->
+						<!--Facebook icon-->
+						<picture> 
+							<!--prevent picture from loading when on small devices-->
 							<source srcset="images/blank_img.png" media="(max-width:600px)"/>
 							<img src="images/facebook-round-color.svg" class="icons" alt="facebook icon"/>
 						</picture>
 					</a>
 					<a href="https://www.instagram.com/">
+						<!--Instagram icon-->
 						<picture>
+							<!--prevent picture from loading when on small devices-->
 							<source srcset="images/blank_img.png" media="(max-width:600px)"/>
 							<img src="images/instagram-round.svg" class="icons" alt="instagram icon"/>
 						</picture>
@@ -57,7 +69,8 @@
 
 
 		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
-		<nav class="topnav">
+		<!--TODO default body text (incl. <a> ??) in w3.css is verdana - create CSS rule for nav-menu and change to trebuchet, same for footer links-->
+		<!--nav class="topnav">
 			<ul class="nav-menu">
 				<li class="nav-item"><a class="active-link nav-link" href="index.html" aria-current="page">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="about/about.html">About</a></li>
@@ -76,6 +89,23 @@
                 <span class="bar"></span>
             </div>
 			
+		</nav-->
+
+		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
+		<!--menu bar class-->
+		<nav class="w3-bar w3-light-gray">
+			<!--keeping ul and li tags for screen readers-->
+			<ul class="nav-menu">
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile"><a class="w3-text-teal w3-hover-text-teal active-link" href="index.html" aria-current="page">Home</a></li>
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile"><a class="w3-hover-text-teal" href="about/about.html">About</a></li>
+				<li class="w3-bar-item w3-button w3-hover-none w3-mobile"><a class="w3-hover-text-teal" href="reservations/reservations.html">Reservations</a></li>
+				<!--Float this block of menu items right-->
+				<div class="w3-right">
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile"><a class="w3-hover-text-teal" href="menu/menu.html">Menu</a></li>
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile"><a class="w3-hover-text-teal" href="blog/blog.html">Blog</a></li>
+					<li class="w3-bar-item w3-button w3-hover-none w3-mobile"><a class="w3-hover-text-teal" href="contact/contact.html">Contact</a>
+				</div>
+			</ul>
 		</nav>
 
 
@@ -110,7 +140,7 @@
               
 			<!-- Feature text section-->
 			<div class="text-container">
-                
+                <!--TODO change the default text for this specific element to google font and cursive as a fallback-->
 				<p class="feature-text">
 					<strong>E te iwi, he haukai tēnei kei tō aroaro, kainga!</strong>
 					<br /><em>- People, this is a feast placed before you, devour it!</em>

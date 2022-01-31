@@ -1,24 +1,25 @@
 /* universal box-sizing */
-* {
+/** {
 	box-sizing: border-box;
 
 }
 
+/*  w3.css should take care of responsive text and have default heading styles etc
 html, body {
 	font-size: 15px;
 } 	
 
 html {
 	-webkit-text-size-adjust: 100%;
-}
+}*/
 
 /* BODY rule sets-------------------------------------------------*/
-body {
+/*body {
 	margin:0;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	/*display:block;*/
+	/*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+	/*display:block;
 
-}
+}*/
 
 /*headings within body*/
 h3.body-heading {
@@ -28,12 +29,12 @@ h3.body-heading {
 }
 
 /*HEADER rule sets----------------------------------------------------*/
-.header {
+/*.header {
 	background-color: whitesmoke;
 	width: 100%;
 	display: block;
 	height:auto;
-	/*limit height of header*/
+	/*limit height of header
 	min-height: 190px;
 	max-height: 250px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -41,52 +42,45 @@ h3.body-heading {
 	padding:5%;
 	margin-top:auto;
 	margin-bottom:auto;
-}
+}*/
 
 #haukai {
-	display:block;
+	/*display:block;
 	font-weight: normal;
 	padding: 15px 20px 0px 20px;
-	margin: 0;
+	margin: 0;*/
 	line-height:1.2;
 
 }
 
-#restaurant {
-	display:block;
-	font-weight: bold;
+/*#restaurant {
+
 	margin: 0;
 
-}
+}*/
 
-/*center text*/
+/*center text
 .centered {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;	
-}
+}*/
 
 #logo {
-	opacity: 50%;
 	width: 13vmax;
-	padding-top:10px;
-	padding-bottom:10px;
-	margin-top:10px;
-	margin-bottom:10px;
-	/*prevent logo being too big or small for header*/
+	/*prevent logo being too big for header*/
 	max-width:100px;
-	min-width:60px;
-	/*center within header*/
+
+	/*center within header
 	display:block;
 	position:absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);*/
 	
 }
-
 
 
 /*social media icons*/
@@ -98,13 +92,13 @@ h3.body-heading {
 	padding: 2px;
 }
 
-.icon-box {
+/*.icon-box {
 	display: block;
 	position: absolute;
 	top: 10px;
 	right: 10px;
 	height:150px;
-}
+}*/
 
 /*footer links*/
 /*remove default hyperlink styling in header and footer*/
@@ -113,92 +107,100 @@ a {
 	color: black;
 	
 }
-
+/*footer*/
 a.links {
 	color:#0f63ff;
 }
 
 
 /* NAVIGATION rule sets --------------------------------------------*/
+.nav-menu {
+	padding:0;
+	margin:0;
+}
 
-/*nav menu container*/
+/*nav menu container
 .topnav {
 	overflow: hidden;
 	width:100%;
 	background-color: whitesmoke;
-}
+}*/
 
-/* get rid of default list styles*/
+/* get rid of default list styles
 li {
     list-style: none;
 }
 /* nav links styling*/
 a {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: none;
+}
+    /*text-decoration: none;
 	letter-spacing:0.2pt;
 	font-size:1.2rem;
 }
 /*block for each list item*/
-li a {
+/*li a {
 	display:flex;
 	flex-flow:column;
 	padding: 0px 15px 10px 15px;
 }
 
-/*ul*/
+/*ul
 .nav-menu {
 	margin:0;
 	padding:0;
 }
 
 #right-menu {
-	/*make 2nd half of menu align to the right*/
+	/*make 2nd half of menu align to the right
 	float: right;
-}
+}*/
 
-/*li*/
+/*li
 .nav-item {
-	/*makes list items float in a row*/
+	/*makes list items float in a row
 	float: left;
 }
 
-/*text color of links*/
+/*text color of links
 .nav-link {
     color: black;
 }
 
-/*hover color of links*/
+/*hover color of links
 .nav-link:hover{
     color: #009b6c;
 }
 
 /* active link text color and styling */
 .active-link {
-	color:#009b6c;
+	/*color:#009b6c;*/
 	text-decoration: underline;
 	text-underline-offset: 4px;
 	font-weight:bold;
-	
+}
+
+.w3-bar-item {
+	font-size:large;
 }
 
 
-/*hamburger menu for smaller devices*/
-/*only display when screen is width defined in media queries*/
+/*hamburger menu for smaller devices
+/*only display when screen is width defined in media queries
 .hamburger {
 	display:none;
 }
 
-/*hamburger menu icon animation*/
+/*hamburger menu icon animation
 .bar {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 2.5px auto; /*margin:5px auto*/
+    margin: 2.5px auto; /*margin:5px auto
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
-}
+}*/
 
 
 /* MAIN container rule set -------------------------------------------*/
