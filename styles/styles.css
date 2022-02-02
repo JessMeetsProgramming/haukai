@@ -151,19 +151,6 @@ p.feature-text {
 
 
 
-/*ABOUT page rule sets-----------------------------------------------------------*/
-/*positioning and text styling*/
-#about-text {
-	display: block;
-	line-height:1.5;
-	margin-left:10%;
-	margin-right:10%;
-	text-align: left;
-	padding-bottom: 15%;
-	padding-top:5%;
-}
-
-
 /*RESERVATIONS page rule sets-----------------------------------------------------------------------*/
 
 /* main container*/
@@ -226,11 +213,11 @@ button:hover {
 	color: white;
 }
 
-.content {
-	/*keep content on top of image*/
+/*.content {
+	/*keep content on top of image
 	position: relative;
 
-}
+}*/
 /*positioning*/
 #booking-section {
 	text-align: center;
