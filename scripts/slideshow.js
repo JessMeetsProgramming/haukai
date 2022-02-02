@@ -25,5 +25,6 @@ if (document.documentElement.clientWidth > 600) {
             
         }
 
+
     });
 }

@@ -29,6 +29,7 @@
 		<script src="scripts/nav-menu.js"></script>
 	</head>
 
+
 	<body>
 		<!--Header with logo and restaurant name-->
 		<header class="w3-container w3-light-gray">
@@ -78,6 +79,7 @@
 			</div>
 		</header>
 
+
 		<!-- Responsive menu - changes to hamburger menu on mobile/small tablet-->
 		<nav class="w3-bar w3-light-gray w3-large w3-mobile">
 			<!--keeping ul and li tags for screen readers-->
@@ -124,10 +126,10 @@
 
 
 		<main class="w3-display-container w3-center">
-			<!--Slideshow container -->
-			<div class="slide-container">
+			<!--Slideshow container"slide-container" -->
+			<div class="w3-content w3-center">
 				<!-- multiple sets of images for each slide-->
-				<picture class="mySlides" id="visible">
+				<picture class="mySlides" id="slide">
 					<source
 						id="slide"
 						srcset="images/restaurant_table_xs320.jpg"
@@ -136,7 +138,7 @@
 					<source
 						id="slide"
 						srcset="images/restaurant_table_small.jpg"
-						media="(max-width: 640px)"
+						media="(max-width: 600px)"
 					/>
 					<source
 						id="slide"
@@ -150,12 +152,12 @@
 					/>
 					<img
 						id="slide"
-						src="images/restaurant_table_xs320.jpg"
+						src="images/restaurant_table_lrg.png"
 						alt="haukai restaurant table setting"
 					/>
 				</picture>
 
-				<picture class="mySlides" id="hidden">
+				<picture class="mySlides w3-hide-small" >
 					<source srcset="images/blank_img.png" media="(max-width:600px)" />
 					<source
 						id="slide"
@@ -174,7 +176,7 @@
 					/>
 				</picture>
 
-				<picture class="mySlides" id="hidden">
+				<picture class="mySlides w3-hide-small">
 					<source srcset="images/blank_img.png" media="(max-width:600px)" />
 					<source
 						id="slide"
@@ -192,7 +194,8 @@
 						alt="chef plating artfully"
 					/>
 				</picture>
-			</div>
+			</div> <!--end of slideshow-->
+
 
 			<!-- Feature text section-->
 			<div class="w3-container w3-center " id="text-container">
@@ -205,6 +208,7 @@
 					we want to share it with the world and keep our traditions alive.
 				</p>
 			</div>
+
 		</main>
 
 
