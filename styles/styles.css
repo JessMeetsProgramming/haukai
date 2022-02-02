@@ -379,24 +379,9 @@ p.drinks {
 
 /*PRIVACY and Staff page rule sets----------------------------------------------*/
 
-/*position text*/
-#priv-text {
-	display: block;
-	padding: 5% 10% 10% 10%;
-}
-/*define list styles - bullet points and positioning*/
-#list-style {
-	display: block;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 40px;
-}
 
-/*privacy page links*/
-#priv-li {
-	float: none;
+/*privacy page list*/
+.priv-li {
 	list-style-type: disc;
 }
 
@@ -499,11 +484,7 @@ p.drinks {
 		margin:0;
 	}
 
-	/*add to other columns on smaller screens*/
-	#footer-links {
-		float:left;
-		
-	}
+
 	/*change menu width when images are hidden*/
 	.myMenus {
 		width:100%;
@@ -527,7 +508,7 @@ p.drinks {
 		font-size: 1.125rem; /*18px*/
 	}
 
-	p.menu-description, p.drinks, p.about-text, button, .footer-container, .links a, .body-text {
+	p.menu-description, p.drinks, button, .footer-container, .links a, body {
 		font-size: 0.9375rem; /*15px*/
 	}
 
@@ -563,7 +544,7 @@ p.drinks {
 	p.menu-item {
 		font-size: 1.2rem;/*19.2px*/
 	}
-	p.menu-description, p.drinks, p.about-text, button, .footer-container, .links a, .body-text {
+	p.menu-description, p.drinks, button, .footer-container, .links a, body {
 		font-size:1rem; /*16px*/
 	}
 	/* alternative image sizes for reservations page*/
@@ -645,19 +626,22 @@ p.drinks {
 
 @media only screen and (min-height:1024px) {
 
-	/*about text container size up*/
+	/*about text container size up
 	#about-text {
 		padding-bottom: 20%;
 		padding-top:10%;
 
-	}
+	}*/
 	/*add padding to top of paragraphs*/
 	h3.body-heading {
 		padding-top:15%;
 		font-size:2.2rem;
 	}
 
-	p.about-text {
+	/*p.about-text {
+		font-size: 1.3rem;
+	}*/
+	body {
 		font-size: 1.3rem;
 	}
 
