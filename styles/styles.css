@@ -1,8 +1,8 @@
 /* universal box-sizing */
-/** {
+/* {
 	box-sizing: border-box;
 
-}
+}*/
 
 /*  w3.css should take care of responsive text and have default heading styles etc
 html, body {
@@ -136,7 +136,7 @@ a {
 	display: block;
 }
 /*coloured margins containing slideshow on larger screens*/
-.w3-content {
+.slide-container {
 	background-color: #d2ddd8;
 	height: auto;
 	width: 100%;
@@ -153,16 +153,15 @@ p.feature-text {
 
 /*RESERVATIONS page rule sets-----------------------------------------------------------------------*/
 
-/* main container*/
-.main {
+/* main container for background image */
+#main {
 	position: relative;
 	max-height: 100%;
     width: 100%;	
 	overflow-y: auto;
 }
 
-
-.main::before {
+#main::before {
 	content:"";
 	background-image: url("../images/reservation_large.jpg");
 	background-size: cover;
@@ -172,58 +171,44 @@ p.feature-text {
 	bottom: 0px;
 	left: 0px;
 	opacity: 0.85;
-
 }
 
-/* centers buttons within page*/
-.center-align {
-	text-align: center;
-	padding:10px;
-}
-/*button positioning and design*/
+/*button positioning and design
 button {
-	position: relative;
+
 	background-color: #4b7990;
-	border: none;
 	color: #ffffff;
 	padding: 20px;
-	min-width: 150px;
-	max-width: 250px;
-	width:60vw;
-	text-align: center;
 	transition-duration: 0.4s;
 	text-decoration: none;
 	overflow: hidden;
-	cursor: pointer;
-	border-radius: 5px;
+}*/
 
-}
 /*spacing between buttons*/
 #button1, #button2 {
-	margin:5px;
+	margin:5px;	
+	min-width: 150px;
+	max-width: 250px;
+	width:60vw;
 }
-/*styling for button in disabled state*/
+/*styling for button in disabled state
 button:disabled {
 	opacity: 0.9;
 	background-color: #86adc1;
-}
-/* change colour with mouse hover*/
+}*/
+/* change colour with mouse hover
 button:hover {
 	background-color: #86adc1;
 	color: white;
-}
-
-/*.content {
-	/*keep content on top of image
-	position: relative;
-
 }*/
+
+.content {
+	/*keep content on top of background image*/
+	position: relative;
+}
 /*positioning*/
 #booking-section {
-	text-align: center;
 	display: none;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 /*responsive form*/
@@ -233,28 +218,7 @@ button:hover {
 	margin:0;
 }
 
-#functions-section {
-	/*hide on page load*/
-	/*display: none;*/
-	/* positioning*/
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
 
-/*functions text blocks*/
-.blocks {
-	background-color: whitesmoke;
-	border-radius: 7px;
-	width: 75%;
-	margin-left: 12.5%;
-	margin-right: 12.5%;
-	height: auto;
-	padding: 15px;
-	margin-bottom: 10px;
-	display: block;
-	text-align: left;
-
-}
 
 #functions-section h3.body-heading {
 	/*disable heading padding in this section*/
@@ -316,10 +280,10 @@ p.drinks {
 
 /*BLOG page rule sets-----------------------------------------------------*/
 
-/*makes responsive*/
+/*makes responsive
 .blog-buttons  {
 	width:100%;
-}
+}*/
 
 .blog-img {
 	width:100%; 
@@ -467,7 +431,7 @@ p.drinks {
 	}
 	
 	/* alternative image sizes for reservations page*/
-	.main::before {
+	#main::before {
 		background-image: url("../images/reservation_XS_webp.webp");
 
 	}
@@ -483,8 +447,6 @@ p.drinks {
 		width:100%;
 		margin:0;
 	}
-
-
 	/*change menu width when images are hidden*/
 	.myMenus {
 		width:100%;
@@ -513,7 +475,7 @@ p.drinks {
 	}
 
 	/* alternative image sizes for reservations page*/
-	.main::before {
+	#main::before {
 		background-image: url("../images/reservation_S_webp.webp");
 	}
 
@@ -548,8 +510,15 @@ p.drinks {
 		font-size:1rem; /*16px*/
 	}
 	/* alternative image sizes for reservations page*/
-	.main::before {
+	#main::before {
 		background-image: url("../images/reservation_M.jpg");
+	}
+
+	/*functions text blocks - add padding for larger screens and center items*/
+	.w3-panel {
+		width: 75%;
+		margin-left: 12.5%;
+		margin-right: 12.5%;
 	}
 
 }
@@ -581,7 +550,7 @@ p.drinks {
 		font-size:1.125rem;/*18px*/
 	}
 	/* alternative image sizes for reservations page*/
-	.main::before {
+	#main::before {
 		background-image: url("../images/reservation_L.jpg");
 	}
 
@@ -616,10 +585,9 @@ p.drinks {
 		font-size: 1.25rem;/*20px*/
 	}
 	/* alternative image sizes for reservations page*/
-	.main::before {
+	#main::before {
 		background-image: url("../images/reservation_XL.jpg");
 	}
-
 
 }
 
