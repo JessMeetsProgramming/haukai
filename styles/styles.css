@@ -173,17 +173,6 @@ p.feature-text {
 	opacity: 0.85;
 }
 
-/*button positioning and design
-button {
-
-	background-color: #4b7990;
-	color: #ffffff;
-	padding: 20px;
-	transition-duration: 0.4s;
-	text-decoration: none;
-	overflow: hidden;
-}*/
-
 /*spacing between buttons*/
 #button1, #button2 {
 	margin:5px;	
@@ -191,16 +180,6 @@ button {
 	max-width: 250px;
 	width:60vw;
 }
-/*styling for button in disabled state
-button:disabled {
-	opacity: 0.9;
-	background-color: #86adc1;
-}*/
-/* change colour with mouse hover
-button:hover {
-	background-color: #86adc1;
-	color: white;
-}*/
 
 .content {
 	/*keep content on top of background image*/
@@ -218,8 +197,6 @@ button:hover {
 	margin:0;
 }
 
-
-
 #functions-section h3.body-heading {
 	/*disable heading padding in this section*/
 	padding-top:0;
@@ -230,7 +207,10 @@ button:hover {
 /*font styling of menus*/
 p.menu-item, h3.menu-heading{
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
+	
+}
+h3.menu-heading {
+	font-weight:bold;
 }
 p.menu-description,
 p.drinks {
@@ -240,7 +220,7 @@ p.drinks {
 }
 
 /* menu sections */
-.myMenus {
+/*.myMenus {
 	padding: 5%;
 	float:none;
 	width:50%;
@@ -248,16 +228,16 @@ p.drinks {
   	vertical-align: middle;
 }
 
-/*images**/
+/*images
 .col2 {
 	float:none;
-	/*center image*/
+	/*center image
 	display: inline-block;
   	vertical-align: middle;
-}
+}*/
 
 /*alternate background color to differentiate between menus*/
-#appetisers,
+/*#appetisers,
 #dessert {
 	background-color: white;
 	text-align:left;
@@ -266,24 +246,19 @@ p.drinks {
 #beverages {
 	background-color: whitesmoke;
 	text-align:right;
-}
+}*/
 
-/*menu image positioning*/
+/*menu image positioning
 #lamb, #drinks {
 	margin-right:12.5%;
 	
 }
 #salmon, #ice-cream {
 	margin-left:12.5%;
-}
+}*/
 
 
 /*BLOG page rule sets-----------------------------------------------------*/
-
-/*makes responsive
-.blog-buttons  {
-	width:100%;
-}*/
 
 .blog-img {
 	width:100%; 
@@ -403,6 +378,11 @@ p.drinks {
 		display:none;
 	}
 
+	/* change menu alignment on smaller screens*/
+	.myMenus {
+		text-align: center !important;
+	}
+
 	/*minimise size of each blog entry preview*/
 	.blog-text {
 		display:none;
@@ -422,14 +402,6 @@ p.drinks {
 		align-items: center;
 	}
 
-	/*center menus*/
-	#appetisers,
-	#dessert,
-	#main-meals,
-	#beverages {
-		text-align:center;
-	}
-	
 	/* alternative image sizes for reservations page*/
 	#main::before {
 		background-image: url("../images/reservation_XS_webp.webp");
@@ -447,10 +419,6 @@ p.drinks {
 		width:100%;
 		margin:0;
 	}
-	/*change menu width when images are hidden*/
-	.myMenus {
-		width:100%;
-	}
 
 	#haukai {
 		font-size:2.25rem; /*36px*/
@@ -459,7 +427,7 @@ p.drinks {
 	#restaurant {
 		font-size: 1rem; /*16px*/
 	}
-
+	/*home page feature text container padding*/
 	#text-container {
 		padding: 5% 5%;
 	}
@@ -606,9 +574,6 @@ p.drinks {
 		font-size:2.2rem;
 	}
 
-	/*p.about-text {
-		font-size: 1.3rem;
-	}*/
 	body {
 		font-size: 1.3rem;
 	}
@@ -617,20 +582,6 @@ p.drinks {
 	#text-container {
 		padding: 20% 15%;
 	}
-
-	/*.blocks {
-		margin-top:20px;
-	}
-
-	.main {
-		padding-top:100px;
-		padding-bottom:100px;
-	}
-
-	#booking-form {
-		height: 50vh;
-	}*/
-
 
 }
 
