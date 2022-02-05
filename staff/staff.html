@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">		
 		<link rel="stylesheet" href="../styles/styles.css" />
 		<script src="../scripts/nav-menu.js"></script>
+		<script src="../scripts/roster-pagination.js"></script>
 
 	</head>
 
@@ -119,9 +120,136 @@
 			</div>
 		</nav>
 
+		<!-- Main content -->
+		<main class="w3-container">
+			<div class="w3-white w3-content w3-padding">
+				<h3 class="body-heading">Staff Rosters</h3>
+				<!-- Staff roster table -->
+				<!--TODO extra div here for section - add css rule to make table width 100% for mobile or use w3-mobile??-->
+				<div class="w3-responsive table1">
+					<table class="w3-table-all">
+						<thead>
+							<tr class="w3-teal">
+								<th class="table-header">Date</th>
+								<th class="table-header">SHIFT 1: 11.30am - 5.30pm</th>
+								<th class="table-header">SHIFT 2: 5.30 - 10.30pm</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>9/2 Wed</td>
+							<td>Charlie Smith, Jacob Field</td>
+							<td>Melissa Green, Kate Shepherd</td>
+						</tr>
+						<tr>
+							<td>10/2 Thu</td>
+							<td>Charlie Smith, Kate Shepherd</td>
+							<td>Eruera Parata, Sally Jones</td>
+						</tr>
+						<tr>
+							<td>11/2 Fri</td>
+							<td>Charlie Smith, Jacob Field</td>
+							<td>Eruera Parata, Kate Shepherd</td>
+						</tr>
+						<tr>
+							<td>12/2 Sat</td>
+							<td>Charlie Smith, Jacob Field</td>
+							<td>Melissa Green, Kate Shepherd</td>
+						</tr>
+						<tr>
+							<td>13/2 Sun</td>
+							<td>Charlie Smith, Jacob Field</td>
+							<td>Melissa Green, Sally Jones</td>
+						</tr>
+					</table>
+				
+				</div>	
+				
+				<!-- TODO Second table for week 2 - needs to be accessible via pagination-->
 
-		<main>
-			<div><h3 class="body-heading">Staff Rosters</h3></div>
+				<div class="w3-responsive table2">
+					<table class="w3-table-all">
+						<thead>
+							<tr class="w3-teal">
+								<th class="table-header">Date</th>
+								<th class="table-header">SHIFT 1: 11.30am - 5.30pm</th>
+								<th class="table-header">SHIFT 2: 5.30 - 10.30pm</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>16/2 Wed</td>
+							<td>Eruera Parata, Jacob Field</td>
+							<td>Melissa Green, Kate Shepherd</td>
+						</tr>
+						<tr>
+							<td>17/2 Thu</td>
+							<td>Charlie Smith, Jacob Field</td>
+							<td>Sally Jones, Melissa Green</td>
+						</tr>
+						<tr>
+							<td>18/2 Fri</td>
+							<td>Charlie Smith, Kate Shepherd</td>
+							<td>Eruera Parata, Melissa Green</td>
+						</tr>
+						<tr>
+							<td>19/2 Sat</td>
+							<td>Eruera Parata, Kate Shepherd</td>
+							<td>Charlie Smith, Sally Jones</td>
+						</tr>
+						<tr>
+							<td>20/2 Sun</td>
+							<td>Charlie Smith, Jacob Field</td>
+							<td>Sally Jones, Melissa Green</td>
+						</tr>	
+					</table>
+				</div>
+				<!-- Pagination buttons -->
+				<div>
+					<!-- TODO edit disabled button style/function-->
+					<a href="#" class="w3-button previous">&#10094; Current Week</a>
+					<a href="#" class="w3-button w3-right next">Next Week &#10095;</a>
+				</div>
+			</div> <!-- END of roster section-->
+
+			<!-- Staff contact information -->
+			<div class="w3-light-gray w3-content ">
+				<h3 class="body-heading">Staff Contact Numbers</h3>
+				<div class="w3-responsive">
+					<table class="w3-table-all">
+						<thead>
+							<tr class="w3-blue-gray">
+								<th class="table-header">Name</th>
+								<th class="table-header">Phone Number</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>Charlie Smith</td>
+							<td>021 394 8567</td>
+						</tr>
+						<tr>
+							<td>Melissa Green</td>
+							<td>022 8561 1257</td>
+						</tr>
+						<tr>
+							<td>Kate Shepherd</td>
+							<td>021 714 2369</td>
+						</tr>
+						<tr>
+							<td>Eruera Parata</td>
+							<td>027 5618 8315</td>
+						</tr>
+						<tr>
+							<td>Jacob Field</td>
+							<td>027 2734 6119</td>
+						</tr>
+						<tr>
+							<td>Sally Jones</td>
+							<td>021 9245 6177</td>
+						</tr>
+					</table>
+
+				</div>
+		
+			</div>
 		</main>
 
 

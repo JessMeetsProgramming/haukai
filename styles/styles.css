@@ -208,6 +208,18 @@ p.drinks {
 	list-style-type: disc;
 }
 
+/* Staff tables - change header default bold to normal weight.*/
+.table-header {
+	font-weight:normal;
+}
+
+.table1, .table2 {
+	display:none;
+}
+
+.table1.active, .table2.active {
+	display:block;
+}
 
 
 /* MEDIA QUERIES -------------------------------------------------------*/
