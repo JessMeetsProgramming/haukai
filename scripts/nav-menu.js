@@ -13,15 +13,5 @@ document.onreadystatechange = function () {
             hamburger.classList.toggle("active");
             navMenu.classList.toggle("active");
         }
-
-        
-        /*const navLink = document.querySelectorAll(".nav-link");
-        //wait for click on menu links
-        navLink.forEach(n => n.addEventListener("click", closeMenu));
-        // close menu when link is selected
-        function closeMenu() {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }*/
     }
 }

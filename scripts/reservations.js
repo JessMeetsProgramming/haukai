@@ -1,46 +1,37 @@
-function myFunction1() {
-  //get div and button elements by id
-    var events = document.getElementById("functions-section");
-    var bookings = document.getElementById("booking-section");
-    var button1 = document.getElementById("button1");
-    var button2 = document.getElementById("button2");
-    
-    // if events section is not displayed
-    if (events.style.display === "none") {
-      //swap from displaying booking form to events
-      bookings.style.display = "none";
-      events.style.display = "block";
-      //change button state to reflect the section displayed
+
+// when the document has loaded run the script
+$(document).ready(function() {
+
+  // get div and button elements by id
+  const button1 = document.querySelector("#button1");
+  const button2 = document.querySelector("#button2");
+  const events = document.getElementById("functions-section");
+  const bookings = document.getElementById("booking-section");
+  
+  // wait for click event on buttons
+  button1.addEventListener("click", myFunction1);
+  button2.addEventListener("click", myFunction2);
+
+  function myFunction1() {
+
+    //swap from displaying booking form to events
+    bookings.style.display = "none";
+    events.style.display = "block";
+    //change button state to reflect the section displayed
     button1.disabled = true;
-      button2.disabled = false;
-    } else {
-      events.style.display = "none";
-    }
-    
- 
+    button2.disabled = false;
+
   }
-  
-  function myFunction2() {
-    //get div and button elements by id
-   var events = document.getElementById("functions-section");
-    var bookings = document.getElementById("booking-section");
-    var button2 = document.getElementById("button2");
-    var button1 = document.getElementById("button1");
     
-    // if events section is not displayed
-    if (bookings.style.display === "none") {
-      //swap from displaying booking form to events
-      events.style.display = "none";
-      bookings.style.display = "block";
-      //change button state to reflect the section displayed
-      button2.disabled = true;
-      button1.disabled = false;
-    } else {
-      bookings.style.display = "none";
-    }
+  function myFunction2() {
 
+    //swap from displaying booking form to events
+    events.style.display = "none";
+    bookings.style.display = "block";
+    //change button state to reflect the section displayed
+    button2.disabled = true;
+    button1.disabled = false;
 
+  }
 
-  
-
-}
+});
