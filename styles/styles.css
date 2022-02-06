@@ -91,22 +91,21 @@ a {
 /*INDEX page rule sets------------------------------------------------*/
 /*slide images default display none, so they display one at a time using js*/
 .mySlides {
-	display:none;
+	display:none;	
 }
 
 /*slide position and size*/
 #slide {
+	display:block;
 	width: 80%;
 	height: auto;
 	margin-left: 10%;
 	margin-right: 10%;
-	display: block;
 }
+
 /*coloured margins containing slideshow on larger screens*/
 .slide-container {
 	background-color: #d2ddd8;
-	height: auto;
-	width: 100%;
 }
 
 /* text styling*/
@@ -288,11 +287,20 @@ p.drinks {
 		background-image: url("../images/reservation_XS_webp.webp");
 
 	}
+	/* make slide1 image visible - no slideshow for mobiles*/
+	#slide1 {
+		display:block;
+	}
+	/*disable slide container and expand image to take up screen width.*/
+	#slide {
+		width:100%;
+		margin:0;
+	}
 
 }
 
 
-/*small-medium devices such as portrait tablets 601-768px*/
+/*small-medium devices such as portrait tablets 0-768px*/
 @media only screen and (max-width: 768px) {
 
 	/*disable slide container and expand image to take up screen width.*/
@@ -308,8 +316,8 @@ p.drinks {
 	#restaurant {
 		font-size: 1rem; /*16px*/
 	}
-	/*home page feature text container padding*/
-	#text-container {
+	/*home page feature text container padding and about page*/
+	.text-container {
 		padding: 5% 5%;
 	}
 	h3.menu-heading, h3.body-heading {
@@ -342,8 +350,8 @@ p.drinks {
 	#restaurant {
 		font-size: 1.125rem; /*18px*/
 	}
-	/*home -feature text container size up*/
-	#text-container {
+	/*home -feature text container size up and about page*/
+	.text-container {
 		padding: 10% 7.5%;
 	}
 	p.feature-text {
@@ -355,7 +363,7 @@ p.drinks {
 	p.menu-item {
 		font-size: 1.2rem;/*19.2px*/
 	}
-body {
+	body {
 		font-size:1rem; /*16px	p.menu-description, p.drinks, button, .footer-container, .links a, */
 	}
 	/* alternative image sizes for reservations page*/
@@ -383,8 +391,8 @@ body {
 		font-size: 1.2rem;/*19.2px*/
 	}
 
-	/*home -feature text container size up*/
-	#text-container {
+	/*home -feature text container size up and about page*/
+	.text-container {
 		padding: 20% 15%;
 	}
 	h3.menu-heading, h3.body-heading, p.feature-text {
@@ -418,8 +426,8 @@ body {
 		font-size: 1.3rem; /*20.8px */
 	}
 
-	/*home -feature text container size up*/
-	#text-container {
+	/*home -feature text container size up and about page*/
+	.text-container {
 		padding: 20% 15%;
 	}
 
@@ -443,12 +451,7 @@ body {
 
 @media only screen and (min-height:1024px) {
 
-	/*about text container size up
-	#about-text {
-		padding-bottom: 20%;
-		padding-top:10%;
 
-	}*/
 	/*add padding to top of paragraphs*/
 	h3.body-heading {
 		padding-top:15%;
@@ -459,8 +462,8 @@ body {
 		font-size: 1.3rem;
 	}
 
-	/*home -feature text container size up*/
-	#text-container {
+	/*home -feature text container size up and about page*/
+	.text-container {
 		padding: 20% 15%;
 	}
 

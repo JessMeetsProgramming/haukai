@@ -40,9 +40,9 @@
 	</head>
 
 
-	<body>
+	<body class="w3-display-container">
 		<!--Header with logo and restaurant name-->
-		<header class="w3-container w3-light-gray">
+		<header class="w3-row w3-light-gray">
 
 			<!--use display container to center text on top of the logo-->
 			<div class="w3-display-container w3-center w3-padding w3-margin">
@@ -126,7 +126,7 @@
 					</li>
 				</div>
 			</ul>
-
+			<!-- Menu for mobiles and tablets -->
 			<div class="hamburger">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -135,11 +135,11 @@
 		</nav>
 
 
-		<main class="w3-display-container w3-center">
+		<main class="">
 			<!--Slideshow container"slide-container" -->
-			<div class="w3-content w3-center slide-container">
-				<!-- multiple sets of images for each slide-->
-				<picture class="mySlides" id="slide">
+			<div class="w3-row w3-center slide-container">
+				<!-- slide 1 - set of images based on screen size -->
+				<picture class="mySlides " id="slide1">
 					<source
 						id="slide"
 						srcset="images/restaurant_table_xs320.jpg"
@@ -167,6 +167,7 @@
 					/>
 				</picture>
 
+				<!-- slide 2 - set of images based on screen size -->
 				<picture class="mySlides w3-hide-small" >
 					<source srcset="images/blank_img.png" media="(max-width:600px)" />
 					<source
@@ -186,6 +187,7 @@
 					/>
 				</picture>
 
+				<!-- slide 3 - set of images based on screen size -->
 				<picture class="mySlides w3-hide-small">
 					<source srcset="images/blank_img.png" media="(max-width:600px)" />
 					<source
@@ -208,7 +210,7 @@
 
 
 			<!-- Feature text section-->
-			<div class="w3-container w3-center " id="text-container">
+			<div class="w3-container w3-center text-container">
 				<p class="feature-text w3-padding-16 w3-mobile">
 					<strong>E te iwi, he haukai tēnei kei tō aroaro, kainga!</strong>
 					<br /><em>- People, this is a feast placed before you, devour it!</em>
@@ -234,7 +236,7 @@
 			<!--Opening hours-->
 			<div class="w3-col m7 l7 w3-padding-small">
 				<p>
-					<strong>Opening Hours</strong><br />Wednesday-Sunday<br />5.30-10.30pm
+					<strong>Opening Hours</strong><br />Wednesday-Sunday<br />11.30am-10.30pm
 				</p>
 			</div>
 
